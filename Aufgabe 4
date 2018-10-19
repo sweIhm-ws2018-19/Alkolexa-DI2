@@ -1,0 +1,31 @@
+class Konto {
+    
+    private String bezeichnung;
+    Kunde [] zeichnungsberechtiger;
+    
+    public GeldBetrag saldo() {...}
+    public void einzahlen (Geldbetrag eingegangenerBetrag) {...}
+}
+
+
+abstract class Kunde {
+    Konto [] konto;
+}
+
+class Privtakunde {
+    private String vorname;
+    private String nachname;
+    Adresse postAdresse;
+}
+
+class Adresse {
+    private String strasse;
+    private int hausnummer;
+    private String plz;
+    private String ort;
+}
+
+class Geschäftskunde {
+    private String firmanename;
+    Adresse domizilAdresse;
+}
