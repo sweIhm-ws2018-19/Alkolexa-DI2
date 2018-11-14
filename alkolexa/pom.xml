@@ -4,7 +4,6 @@
 
   <groupId>edu.hm</groupId>
   <artifactId>alkolexa</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>alkolexa</name>
@@ -22,4 +21,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <version>1.0</version>
+  <issueManagement>
+  	<url>https://github.com/sweIhm-ws2018-19/skillproject-di-2/issues</url>
+  </issueManagement>
 </project>
