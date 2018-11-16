@@ -22,7 +22,7 @@ public class LaunchRequestHandler implements RequestHandler {
         String speechText = "Hallo. Ich lerne Deine Lieblingsfarbe. Bitte sage mir zum Beispiel: Meine Lieblingsfarbe ist blau.";
         String repromptText = "Bitte nenne Deine Lieblingsfarbe.";
         return input.getResponseBuilder()
-                .withSimpleCard("ColorSession", speechText)
+                .withSimpleCard("AlkolexaSession", speechText)
                 .withSpeech(speechText)
                 .withReprompt(repromptText)
                 .build();

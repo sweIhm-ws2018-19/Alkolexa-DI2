@@ -21,7 +21,7 @@ public class HelpIntentHandler implements RequestHandler {
 		// TODO: change speechText
 		String speechText = "Du kannst mir Deine Lieblingsfarbe sagen. Sage zum Beispiel, meine Lieblingsfarbe ist rot.";
 		String repromptText = "Bitte sage mir Deine Lieblingsfarbe."; // TODO: change repromptText
-		return input.getResponseBuilder().withSimpleCard("ColorSession", speechText) // TODO: change Session
+		return input.getResponseBuilder().withSimpleCard("AlkolexaSession", speechText) // TODO: change Session
 				.withSpeech(speechText).withReprompt(repromptText).withShouldEndSession(false).build();
 	}
 }
