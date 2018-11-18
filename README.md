@@ -15,7 +15,7 @@ Alkolexa wird ab dem **25.Dezember.2018** auf Amazon.com verfügbar sein!
 
 _Hol dir Alkolexa_ : [Alkolexa - Amazon.com](https://github.com/sweIhm-ws2018-19/skillproject-di-2)
 
-_Anmerkung: Der oben Angegebene Link für momentan nur auf dieses Github-Repositiory_
+_Anmerkung: Der oben angegebene Link für momentan nur auf dieses Github-Repositiory_
 
 ## Unserer Prototype 
 
