@@ -3,7 +3,7 @@
 ### „Ob ich morgen leben werde, weiß ich freilich nicht aber wenn ich morgen lebe, dass ich morgen trinken werde, weiß ich ganz gewiss!” 
 ~ _Gotthold Ephraim Lessing_
 
-![](https://pixabay.com/get/e83db40c2bf6063ed1534705fb094e90ea74e1d11cac104491f2c47aa5eab3bf/alcohol-1853327_1920.jpg)
+![](https://www.pexels.com/de-de/foto/alkohol-alkoholisches-getrank-bar-brille-162475/)
 
 ## Was ist Alkolexa
 
