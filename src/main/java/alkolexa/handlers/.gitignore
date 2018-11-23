@@ -1,0 +1,9 @@
+/CallEmergencyContactIntantHandler.class
+/CancelandStopIntentHandler.class
+/FallbackIntentHandler.class
+/GetEmergencyContactIntantHandler.class
+/HelpIntentHandler.class
+/LaunchRequestHandler.class
+/SessionEndedRequestHandler.class
+/SetEmergencyContactIntentHandler.class
+/WhatsMyColorIntentHandler.class
