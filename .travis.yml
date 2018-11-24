@@ -14,7 +14,7 @@ script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install -Pdev sonar:sonar
   - mvn org.apache.maven.plugins:maven-assembly-plugin:2.6:assembly -DdescriptorId=jar-with-dependencies package
 
-
+-- Muss noch angepasst werden DEPLOY aus Travis funktioniert noch nicht--
 deploy:
   provider: lambda
   function_name: "lambda-test"
