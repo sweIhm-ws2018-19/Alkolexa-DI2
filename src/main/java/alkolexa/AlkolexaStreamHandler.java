@@ -1,13 +1,9 @@
-package alkolexa;
+package main.java.alkolexa;
 
 import com.amazon.ask.Skill;
 import com.amazon.ask.SkillStreamHandler;
 import com.amazon.ask.Skills;
-import alkolexaHandlers.FallbackIntentHandler;
-import alkolexaHandlers.HelpIntentHandler;
-import alkolexaHandlers.LaunchRequestHandler;
-import alkolexaHandlers.SessionEndedRequestHandler;
-import alkolexaHandlers.CancelandStopIntentHandler;
+import main.java.alkolexa.alkolexaHandlers.*;
 
 
 /**

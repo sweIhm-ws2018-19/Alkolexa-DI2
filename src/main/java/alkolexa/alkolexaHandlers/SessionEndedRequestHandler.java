@@ -1,4 +1,4 @@
-package alkolexaHandlers;
+package main.java.alkolexa.alkolexaHandlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
