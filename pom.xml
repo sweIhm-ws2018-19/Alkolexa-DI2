@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>sweIhm-ws2018-19</groupId>
+  <groupId>Alkolexa</groupId>
   <artifactId>Alkolexa</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
@@ -15,9 +15,9 @@
   </licenses>
   <developers>
     <developer>
-      <name>Alexa Skills Kit</name>
-      <email>ask-sdk-java@amazon.com</email>
-      <organization>Alexa</organization>
+      <name>Unternehmen Di - Alkolexa</name>
+      <email></email>
+      <organization>Unternehmen-Di-Alkolexa</organization>
       <organizationUrl>http://developer.amazon.com/ask</organizationUrl>
     </developer>
   </developers>
@@ -33,10 +33,15 @@
       <artifactId>ask-sdk</artifactId>
       <version>2.5.5</version>
     </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
-    <sourceDirectory>src</sourceDirectory>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -52,5 +57,5 @@
       </plugins>
     </pluginManagement>
   </build>
-
+  
 </project>
