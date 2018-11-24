@@ -1,23 +1,16 @@
-/**
- * IGNORE - Projekt für Software Engineering
- * 
- */
 package main.java.alkolexa.api;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.json.JsonObject;
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.WebTarget;
-import edu.hm.network.t4.examples.JsonObjectFromUrlUtil;
+import com.eclipsesource.*;
+import com.eclipsesource.json.JsonObject;
+import com.sun.*;
 
 public class CocktailAPI {
 	
 	public CocktailAPI() {
-//		new TranslationAPI();
 		JsonObject cocktail = searchForCocktail("magerita");
 		System.out.println(getCocktailName(cocktail));
 		System.out.println(getCocktailInstructions(cocktail));
@@ -31,8 +24,8 @@ public class CocktailAPI {
 	public JsonObject searchForCocktail(String searchCocktail) {
 		String url = "";
 		try {
-			url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="+URLEncoder.encode(searchCocktail, "UTF-8");
-			System.out.println("Request: "+url);
+			url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + URLEncoder.encode(searchCocktail, "UTF-8");
+			System.out.println("Request: " + url);
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

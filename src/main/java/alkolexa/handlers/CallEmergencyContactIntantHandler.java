@@ -5,7 +5,6 @@ import java.util.Optional;
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
-
 import static main.java.alkolexa.handlers.GetEmergencyContactIntantHandler.CONTACT_KEY;
 import static com.amazon.ask.request.Predicates.intentName;
 

@@ -10,5 +10,5 @@ public class SpeechStrings {
 	public static final String FALLBACK = "Tut mir leid, das weiss ich nicht. Sage einfach Hilfe.";
 	public static final String LAUNCHREQUEST = "Hallo. Ich helfe dir neue Cocktails und Weine auszuprobieren. Bitte sage mir zum Beispiel: Starte Alkolexa";
 	public static final String HELP =  "Um einen neuen Cocktail zu erhalten, sage neues Cocktailrezept. Wenn du keine weitere Frage moechstest sage ich moechste Alkolexa beenden.";
-
+	public static final String HELLO = "Willkommen bei Alkolexa";
 }

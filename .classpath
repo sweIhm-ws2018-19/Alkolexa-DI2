@@ -16,5 +16,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="Addon/minimal-json-0.9.5.jar"/>
+	<classpathentry kind="lib" path="Addon/javax.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
