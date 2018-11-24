@@ -21,8 +21,7 @@ public class AlkolexaStreamHandler extends SkillStreamHandler {
                           new CancelandStopIntentHandler(),
                           new SessionEndedRequestHandler(),
                           new HelpIntentHandler(),
-                          new FallbackIntentHandler(),
-                          new WelcomeHandler())
+                          new FallbackIntentHandler())
                   .withSkillId("amzn1.ask.skill.6d0140e1-4583-4cc6-907b-4666dff6293c")
                   .build();
     }
