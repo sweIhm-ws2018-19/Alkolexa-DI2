@@ -10,7 +10,6 @@ import main.java.alkolexa.handlers.FallbackIntentHandler;
 import main.java.alkolexa.handlers.HelpIntentHandler;
 import main.java.alkolexa.handlers.LaunchRequestHandler;
 import main.java.alkolexa.handlers.SessionEndedRequestHandler;
-import main.java.alkolexa.handlers.WelcomeHandler;
 
 public class AlkolexaStreamHandler extends SkillStreamHandler {
 
@@ -25,7 +24,6 @@ public class AlkolexaStreamHandler extends SkillStreamHandler {
                   .withSkillId("amzn1.ask.skill.6d0140e1-4583-4cc6-907b-4666dff6293c")
                   .build();
     }
-
     public AlkolexaStreamHandler() {
         super(getSkill());
     }
