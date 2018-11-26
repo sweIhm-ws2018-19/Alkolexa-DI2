@@ -23,7 +23,7 @@ Prototypen: [Alexa-Skill-Prototyplink](https://app.invocable.com/shared/projects
 
 Anhand unseres Prototypen auf GetStoryLine/Invocable kann genau nachvollzogen werden wie unsere Innovation aufgebaut ist. Welche Features verbaut werden und welche Besonderheiten bestehen. 
 
-## Wie funktioniert main Alkolexa
+## Wie funktioniert mein Alkolexa
 
 _Wir haben viel wert auf einfache Bedienung gelegt!
 Im Folgenden findest du eine Liste von Sprachbefehlen für Alkolexa:_ 
