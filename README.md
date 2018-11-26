@@ -27,4 +27,4 @@ Anhand unseres Prototypen auf GetStoryLine/Invocable kann genau nachvollzogen we
 
 Wir haben viel wert auf einfache Bedienung gelegt! 
 ### Alkolexa öffnen 
-Spricht:' Alexa öffne Alkolexa' Schon wird Alexa für dich deine Skill starten!
+Spricht:`Alexa öffne Alkolexa` Schon wird Alexa für dich deine Skill starten!
