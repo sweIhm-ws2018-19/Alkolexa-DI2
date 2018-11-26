@@ -1,4 +1,4 @@
-package main.java.alkolexa.alkolexaHandlers;
+package alkolexa;
 
 public class SpeechStrings {
 	private static final String HELLO = "Willkommen bei Alkolexa";
