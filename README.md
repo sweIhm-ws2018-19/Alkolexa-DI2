@@ -25,6 +25,8 @@ Anhand unseres Prototypen auf GetStoryLine/Invocable kann genau nachvollzogen we
 
 ## Wie funktioniert main Alkolexa
 
-Wir haben viel wert auf einfache Bedienung gelegt! 
+_Wir haben viel wert auf einfache Bedienung gelegt!
+Im Folgenden findest du eine Liste von Sprachbefehlen für Alkolexa:_ 
+
 ### Alkolexa öffnen 
-Spricht:`Alexa öffne Alkolexa` Schon wird Alexa für dich deine Skill starten!
+#### Spricht:`Alexa öffne Alkolexa`  ➡️ Schon wird Alexa für dich deine Skill starten!
