@@ -18,6 +18,8 @@ import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.LaunchRequest;
 import com.amazon.ask.model.Response;
 
+import alkolexa.SpeechStrings;
+
 import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.requestType;
@@ -30,11 +32,10 @@ public class LaunchRequestHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Willkommen bei Alkolexa. Wie kann ich dir helfen? Bist du zum ersten Mal hier dann sage: Hilfe.";
         String repromptText = "Was kann ich denn für dich tun?";
         return input.getResponseBuilder()
-                .withSimpleCard("Willkommen bei Alkolexa", speechText)
-                .withSpeech(speechText)
+                .withSimpleCard("Willkommen bei Alkolexa", SpeechStrings.getWelc())
+                .withSpeech(SpeechStrings.getWelc())
                 .withReprompt(repromptText)
                 .build();
     }

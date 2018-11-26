@@ -4,6 +4,8 @@ import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
 
+import alkolexa.SpeechStrings;
+
 import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.intentName;
@@ -20,11 +22,10 @@ public class FallbackIntentHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Tut mir leid, das habe ich nicht verstanden. Sage einfach: Hilfe.";
         return input.getResponseBuilder()
-                .withSpeech(speechText)
+                .withSpeech(SpeechStrings.getHelp())
                 .withSimpleCard("Achtung", "Das habe ich nicht verstanden.")
-                .withReprompt(speechText)
+                .withReprompt(SpeechStrings.getHelp())
                 .build();
     }
 

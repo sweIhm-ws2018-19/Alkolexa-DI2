@@ -43,6 +43,8 @@ public class SpeechStrings {
 	public static String getWelc() {
 		return WELC;
 	}
+	
+	
 
 	public static String getWhy() {
 		return WHY;

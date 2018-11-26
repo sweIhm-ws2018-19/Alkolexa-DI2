@@ -17,8 +17,25 @@ public class AlkolexaSpeechStringTest {
 	}
 	
 	@Test
-	public void getSpeechStringWelcTest() {
-		Assert.assertEquals("Schoen das du da bist! Was kann ich fuer dich tun", SpeechStrings.getWelc());
+	public void getSpeechStringHelloTest() {
+		Assert.assertEquals("Willkommen bei Alkolexa", SpeechStrings.getHello());
 	}
+	@Test
+	public void getSpeechStringWhyTest() {
+		Assert.assertEquals("Was interessiert dich, Wein oder Cocktails", SpeechStrings.getWhy());
+	}
+	@Test
+	public void getSpeechStringSorryRepeatTest() {
+		Assert.assertEquals("Koenntest du das noch einmal sagen", SpeechStrings.getSorryPrepeat());
+	}
+	
+	@Test
+	public void getSpeechStringHelpTest() {
+		Assert.assertEquals("Wenn du hilfe sagst, unterstuetze ich dich ", SpeechStrings.getHelp());
+	}
+	
+	
+	
+	 
 	
 }
