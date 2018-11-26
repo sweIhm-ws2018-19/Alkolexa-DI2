@@ -1,7 +1,12 @@
-/**
- * IGNORE - Projekt für Software Engineering
- * 
- */
+/**********************************************************************
+*
+* Project Alkolexa
+* @author Anian Weber, weber.anian@hm.edu
+* @version 26.11.2018
+* 
+* This Class Handels the API connection for the Alexa Skill "Alkolexa"
+*
+***********************************************************************/
 package main.java.alkolexa.api;
 
 import java.io.UnsupportedEncodingException;
