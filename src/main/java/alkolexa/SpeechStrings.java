@@ -12,6 +12,9 @@ public class SpeechStrings {
 	private static final String WHY = "Was interessiert dich, Wein oder Cocktails";
 	
 	
+	private SpeechStrings() {
+		
+	}
 	public static String getHello() {
 		return HELLO;
 	}
