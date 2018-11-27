@@ -21,6 +21,7 @@ import alkolexa.handlers.CancelandStopIntentHandler;
 import alkolexa.handlers.FallbackIntentHandler;
 import alkolexa.handlers.HelpIntentHandler;
 import alkolexa.handlers.LaunchRequestHandler;
+import alkolexa.handlers.RandomCocktailIntentHandler;
 import alkolexa.handlers.SessionEndedRequestHandler;
 
 public class AlkolexaStreamHandler extends SkillStreamHandler {
@@ -32,6 +33,7 @@ public class AlkolexaStreamHandler extends SkillStreamHandler {
                         new CancelandStopIntentHandler(),
                         new SessionEndedRequestHandler(),
                         new HelpIntentHandler(),
+                        new RandomCocktailIntentHandler(),
                         new FallbackIntentHandler())
                 .withSkillId("amzn1.ask.skill.65f49a2f-9e3f-47a7-84c2-228f138002be")
                 .build();
