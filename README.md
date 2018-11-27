@@ -32,5 +32,5 @@ Im Folgenden findest du eine Liste von Sprachbefehlen für Alkolexa:_
 ### 🗪 `Alexa öffne Alkolexa` 👉 Schon wird Alexa für dich deine Skill starten!
 
 
-### Unfinished Features in Sprint 1
+## Unfinished Features in Sprint 1
 Api-anbindung an die Datenbank funktioniert kann noch nicht genutzt werden da der Handler noch nicht exisitiert um Cocktails zu handlen.
