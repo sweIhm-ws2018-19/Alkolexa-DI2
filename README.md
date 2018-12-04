@@ -23,14 +23,3 @@ Prototypen: [Alexa-Skill-Prototyplink](https://app.invocable.com/shared/projects
 
 Anhand unseres Prototypen auf GetStoryLine/Invocable kann genau nachvollzogen werden wie unsere Innovation aufgebaut ist. Welche Features verbaut werden und welche Besonderheiten bestehen. 
 
-## Wie funktioniert mein Alkolexa
-
-_Wir haben viel wert auf einfache Bedienung gelegt!
-Im Folgenden findest du eine Liste von Sprachbefehlen für Alkolexa:_ 
-
-### Alkolexa öffnen 
-### 🗪 `Alexa öffne Alkolexa` 👉 Schon wird Alexa für dich deine Skill starten!
-
-
-## Unfinished Features in Sprint 1
-Api-anbindung an die Datenbank funktioniert kann noch nicht genutzt werden da der Handler noch nicht exisitiert um Cocktails zu handlen.
