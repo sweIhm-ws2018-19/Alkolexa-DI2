@@ -5,7 +5,7 @@
 
 ![](https://images.unsplash.com/photo-1531387367216-681093c0279b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73ca72de11ae9cd2fa7367dc1ee76705&auto=format&fit=crop&w=1316&q=80)
 
-## Was ist Alkolexa
+## Was ist Alkolexa?
 
 Alkolexa ist ein Amazon Alexa Skill mit dessen Hilfe der Nutzer sich Cocktailrezepte und Weinempfehlungen geben lassen kann sowie Notfallanrufe tätigen kann. Vielen Menschen ist häufig nicht klar wie sie bekannte Cocktails aus Filmen mischen oder woraus ein "Sex on the Beach" besteht ( 🍹 ). Ebenso fällt es vielen Menschen schwere sich für den perfekten Wein zu entscheiden, zum Beispiel als Geschenk für den Vorgesetzten oder wenn Freunde zu Besuch kommen ( 🍷 ). Unsere Vision ist es genau hierbei Nutzer der Alexa-Devices mit unserem Skill zu unterstützen! 
 
@@ -13,7 +13,7 @@ Alkolexa ist ein Amazon Alexa Skill mit dessen Hilfe der Nutzer sich Cocktailrez
 
 
 
-## Wie bekomme ich Alkolexa 
+## Wie bekomme ich Alkolexa?
 
 Alkolexa wird ab dem **25.Dezember.2018** auf Amazon.com verfügbar sein!
 
