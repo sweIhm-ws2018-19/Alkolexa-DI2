@@ -9,6 +9,10 @@
 
 Alkolexa ist ein Amazon Alexa Skill mit dessen Hilfe der Nutzer sich Cocktailrezepte und Weinempfehlungen geben lassen kann sowie Notfallanrufe tätigen kann. Vielen Menschen ist häufig nicht klar wie sie bekannte Cocktails aus Filmen mischen oder woraus ein "Sex on the Beach" besteht ( 🍹 ). Ebenso fällt es vielen Menschen schwere sich für den perfekten Wein zu entscheiden, zum Beispiel als Geschenk für den Vorgesetzten oder wenn Freunde zu Besuch kommen ( 🍷 ). Unsere Vision ist es genau hierbei Nutzer der Alexa-Devices mit unserem Skill zu unterstützen! 
 
+## Wie kann ich Alkolexa bedienen?
+
+
+
 ## Wie bekomme ich Alkolexa 
 
 Alkolexa wird ab dem **25.Dezember.2018** auf Amazon.com verfügbar sein!
@@ -23,3 +27,14 @@ Prototypen: [Alexa-Skill-Prototyplink](https://app.invocable.com/shared/projects
 
 Anhand unseres Prototypen auf GetStoryLine/Invocable kann genau nachvollzogen werden wie unsere Innovation aufgebaut ist. Welche Features verbaut werden und welche Besonderheiten bestehen. 
 
+## Sprint 1
+
+Ziel in Sprint 1 ist es den Alexa Skill Buildfähig machen. Ebenso unsere Tools beziehungsweise unsere Toolchain fertig Einsatzbereit zu machen. 
+
+## Sprint 2
+
+Zeil in Sprint 2 ist es Alkolexa mehr und mehr Fähigkeitenm zu geben. Hierzu soll der Zweig für die Auswahl von Cocktails ausgearbeitet werden. Zum Ende von Sprint 2 sind funktionen wie RandomCocktailauswahl implementiert und getestet.
+
+## Sprint 3
+
+--
