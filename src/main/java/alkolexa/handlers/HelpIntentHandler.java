@@ -29,8 +29,8 @@ public class HelpIntentHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Benötigst du Hilfe zu Cocktails oder Wein?";
-        String repromptText = "Benötigst du Hilfe zu Cocktails oder Wein?";
+        String speechText = "Benoetigst du Hilfe zu Cocktails oder Wein?";
+        String repromptText = "Benoetigst du Hilfe zu Cocktails oder Wein?";
         return input.getResponseBuilder()
                 .withSimpleCard("Hilfe", speechText)
                 .withSpeech(speechText)
