@@ -37,7 +37,7 @@ Zeil in Sprint 2 ist es Alkolexa mehr und mehr Fähigkeitenm zu geben. Hierzu so
 
 Implemetierte Funktionen: 
 
-💬 "zufälliger Cocktail" --> Um sich von Alkolexa einen "Random-Cocktail" generieren zu lassen.
+💬 "zufälliger Cocktail" ➡️ Um sich von Alkolexa einen "Random-Cocktail" generieren zu lassen.
 
 ## Sprint 3
 
