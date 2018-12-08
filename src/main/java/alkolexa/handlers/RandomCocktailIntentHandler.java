@@ -29,6 +29,6 @@ public class RandomCocktailIntentHandler implements RequestHandler {
                 .withReprompt(null)
                 .build();
     }
-    }
+}
 
 

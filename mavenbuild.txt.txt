@@ -1,0 +1,9 @@
+org.apache.maven.plugins:maven-assembly-plugin:2.6:assembly -DdescriptorId=jar-with-dependencies package
+
+clean project 
+
+https://stackoverflow.com/questions/5074063/maven-error-failure-to-transfer
+
+Error with tools.jar 
+
+https://stackoverflow.com/questions/46263808/maven-cant-find-tools-jar
