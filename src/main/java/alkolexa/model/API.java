@@ -47,6 +47,16 @@ public class API {
 		return firstFoundCocktail;
 	}
 
+	
+	public static JsonObject randomCocktail() {
+		String url = "";
+		url = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
+		System.out.println("Request: " + url);
+
+		JsonObject jsonObj = JsonObjectFromUrl.getJsonObjectFromUrl(url);
+		JsonObject firstFoundCocktail = (JsonObject) jsonObj.get("drinks").asJsonArray().get(0);
+		return firstFoundCocktail;
+	}
 	public static String getCocktailName(JsonObject cocktailJson) {
 		String name = cocktailJson.getString("strDrink");
 		return name;
