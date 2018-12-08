@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\alexw\Desktop\slslsl\src\main\java\alkolexa\handlers\RandomCocktailIntentHandler.java
 C:\Users\alexw\Desktop\slslsl\src\main\java\alkolexa\model\API.java
 C:\Users\alexw\Desktop\slslsl\src\main\java\alkolexa\handlers\LaunchRequestHandler.java
@@ -9,3 +10,16 @@ C:\Users\alexw\Desktop\slslsl\src\main\java\alkolexa\SpeechStrings.java
 C:\Users\alexw\Desktop\slslsl\src\main\java\alkolexa\handlers\CancelandStopIntentHandler.java
 C:\Users\alexw\Desktop\slslsl\src\main\java\alkolexa\handlers\SearchCocktailHandler.java
 C:\Users\alexw\Desktop\slslsl\src\main\java\alkolexa\AlkolexaStreamHandler.java
+=======
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\SpeechStrings.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\AlkolexaStreamHandler.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\handlers\IngredientsHandler.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\handlers\CancelandStopIntentHandler.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\handlers\FallbackIntentHandler.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\model\API.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\model\JsonObjectFromUrl.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\handlers\SessionEndedRequestHandler.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\handlers\HelpIntentHandler.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\handlers\LaunchRequestHandler.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\handlers\RandomCocktailIntentHandler.java
+>>>>>>> 81f28657f49042dc40f8c887203657d4dad84089
