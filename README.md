@@ -35,6 +35,10 @@ Ziel in Sprint 1 ist es den Alexa Skill Buildfähig machen. Ebenso unsere Tools 
 
 Zeil in Sprint 2 ist es Alkolexa mehr und mehr Fähigkeitenm zu geben. Hierzu soll der Zweig für die Auswahl von Cocktails ausgearbeitet werden. Zum Ende von Sprint 2 sind funktionen wie RandomCocktailauswahl implementiert und getestet.
 
+Implemetierte Funktionen: 
+
+💬 "zufälliger Cocktail" ➡️ Um sich von Alkolexa einen "Random-Cocktail" generieren zu lassen.
+
 ## Sprint 3
 
 --
