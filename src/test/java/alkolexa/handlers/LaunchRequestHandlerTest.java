@@ -28,11 +28,11 @@ public class LaunchRequestHandlerTest {
         assertTrue(handler.canHandle(inputMock));
     }
 
-    /*
-    @Test
-    public void handleTest() {
-        final Response response = TestUtil.standardTestForHandle(handler);
-        assertTrue(response.getOutputSpeech().toString().contains(AlexaTexts.LR_SP));
-    }
-    */
+    
+//    @Test
+//    public void handleTest() {
+//        final Response response = TestUtil.standardTestForHandle(handler);
+//        assertTrue(response.getOutputSpeech().toString().contains(AlexaTexts.LR_SP));
+//    }
+    
 }
