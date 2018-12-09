@@ -39,6 +39,8 @@ Implemetierte Funktionen:
 
 💬 "zufälliger Cocktail" ➡️ Um sich von Alkolexa einen "Random-Cocktail" generieren zu lassen.
 
+💬 "Suche nach Sex on the Beach" ➡️ Um Alkolexa nach dem Cocktail suchen zu lassen.
+
 ## Sprint 3
 
 --
