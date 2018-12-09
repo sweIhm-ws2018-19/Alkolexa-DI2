@@ -18,17 +18,6 @@ import javax.json.JsonObject;
 
 public class API {
 
-//	public CocktailAPI() {
-//
-//		// Simple Basic Tests
-//		// JsonObject cocktail = searchForCocktail("magerita");
-//		// System.out.println(getCocktailName(cocktail));
-//		// System.out.println(getCocktailInstructions(cocktail));
-//		// System.out.println(getCocktailIngredients(cocktail));
-//		// System.out.println(getCocktailMeasures(cocktail));
-//
-//	}
-
 	// Returns the First found Cocktail
 	public static JsonObject searchForCocktail(String searchCocktail) {
 		String url = "";
@@ -57,6 +46,7 @@ public class API {
 		JsonObject firstFoundCocktail = (JsonObject) jsonObj.get("drinks").asJsonArray().get(0);
 		return firstFoundCocktail;
 	}
+	
 	public static String getCocktailName(JsonObject cocktailJson) {
 		String name = cocktailJson.getString("strDrink");
 		return name;
@@ -89,5 +79,4 @@ public class API {
 		}
 		return measures;
 	}
-
 }
