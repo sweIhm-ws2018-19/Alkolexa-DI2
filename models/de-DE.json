@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "crypto guide",
+      "invocationName": "Alkolexa",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
