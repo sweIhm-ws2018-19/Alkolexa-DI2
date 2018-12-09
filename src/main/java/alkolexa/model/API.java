@@ -11,6 +11,8 @@ package alkolexa.model;
 ***********************************************************************/
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.ArrayList;
 
 
@@ -18,6 +20,7 @@ import javax.json.JsonObject;
 
 public class API {
 
+	private static final Logger logger = Logger.getLogger(API.class.getName());
 	// Returns the First found Cocktail
 	public static JsonObject searchForCocktail(String searchCocktail) {
 		String url = "";
@@ -29,8 +32,7 @@ public class API {
 					+ URLEncoder.encode(searchCocktail, "UTF-8");
 			System.out.println("Request: " + url);
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			 logger.log(Level.WARNING, "Exception");
 		}
 
 		JsonObject jsonObj = JsonObjectFromUrl.getJsonObjectFromUrl(url);
