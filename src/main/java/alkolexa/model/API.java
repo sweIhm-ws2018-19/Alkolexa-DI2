@@ -32,6 +32,9 @@ public class API {
 	// Returns the First found Cocktail
 	public static JsonObject searchForCocktail(String searchCocktail) {
 		String url = "";
+		if(searchCocktail.length() == 0) {
+			return null;
+		}
 		try {
 			url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
 					+ URLEncoder.encode(searchCocktail, "UTF-8");

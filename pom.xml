@@ -25,7 +25,6 @@
 		<developerConnection>scm:git:https://github.com/amzn/alexa-skills-kit-java.git</developerConnection>
 		<url>https://github.com/amzn/alexa-skills-kit-java.git</url>
 	</scm>
-
 	<dependencies>
 		<dependency>
 			<groupId>com.amazon.alexa</groupId>

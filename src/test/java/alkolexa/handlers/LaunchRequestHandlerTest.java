@@ -1,9 +1,8 @@
 package alkolexa.handlers;
 
-
+import alkolexa.SpeechStrings;
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.model.Response;
-import alkolexa.handlers.LaunchRequestHandler;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -22,17 +21,10 @@ public class LaunchRequestHandlerTest {
     }
 
     @Test
-    public void canHandleTest() {
-        HandlerInput inputMock = Mockito.mock(HandlerInput.class);
+    public void testCanHandle() {
+        final HandlerInput inputMock = Mockito.mock(HandlerInput.class);
         when(inputMock.matches(any())).thenReturn(true);
         assertTrue(handler.canHandle(inputMock));
     }
 
-    
-//    @Test
-//    public void handleTest() {
-//        final Response response = TestUtil.standardTestForHandle(handler);
-//        assertTrue(response.getOutputSpeech().toString().contains(AlexaTexts.LR_SP));
-//    }
-    
 }

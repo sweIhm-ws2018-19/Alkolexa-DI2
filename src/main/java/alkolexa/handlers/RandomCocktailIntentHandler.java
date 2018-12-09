@@ -26,7 +26,7 @@ public class RandomCocktailIntentHandler implements RequestHandler {
     	
     	return input.getResponseBuilder()
                 .withSpeech("Ich habe " + API.getCocktailName(API.randomCocktail()) + " endeckt")
-                .withReprompt(null)
+                .withShouldEndSession(false)
                 .build();
     }
 }
