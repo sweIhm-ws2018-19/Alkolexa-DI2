@@ -1,40 +1,1840 @@
 {
-  "interactionModel": {
-    "languageModel": {
-      "invocationName": "Alkolexa",
-      "intents": [
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": [
-            "Abbrechen"
-          ]
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": [
-            "Hilfe"
-          ]
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": [
-            "Beenden"
-          ]
-        },
-        {
-          "name": "AMAZON.PauseIntent",
-          "samples": [
-            "Pause"
-          ]
-        },
-        {
-          "name": "AMAZON.ResumeIntent",
-          "samples": [
-            "Weiter"
-          ]
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "alkolexa",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "Abbrechen"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "Hilfe"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "Beenden"
+                    ]
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": [
+                        "Pause"
+                    ]
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": [
+                        "Weiter"
+                    ]
+                },
+                {
+                    "name": "RandomCocktail",
+                    "slots": [],
+                    "samples": [
+                        "zufälliger cocktail",
+                        "zufällig"
+                    ]
+                },
+                {
+                    "name": "RandomCocktailInstructions",
+                    "slots": [],
+                    "samples": [
+                        "wie lauten seine zutaten"
+                    ]
+                },
+                {
+                    "name": "SearchCocktailIntent",
+                    "slots": [
+                        {
+                            "name": "cocktail",
+                            "type": "list_of_Cocktails"
+                        }
+                    ],
+                    "samples": [
+                        "suche {cocktail}"
+                    ]
+                },
+                {
+                    "name": "CocktailInstructionsIntent",
+                    "slots": [
+                        {
+                            "name": "cocktail",
+                            "type": "list_of_Cocktails"
+                        }
+                    ],
+                    "samples": [
+                        "instructions {cocktail}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "list_of_Cocktails",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "A Piece of Ass"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lone Tree Cooler"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zinger"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wine Punch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Daiquiri"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cosmopolitan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Arizona Antifreeze"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "9 1/2 Weeks"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bruised Heart"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gin Rickey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sweet Bananas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3 Wise Men"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dark Caipirinha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kiwi Lemon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Paloma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Quick F**K"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Scooter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Popped cherry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mary Pickford"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Egg-Nog - Classic Cooked"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Valencia Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Frozen Pineapple Daiquiri"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Afterglow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Brave Bull Shooter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Homemade Kahlua"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Imperial Fizz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Whisky Mac"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Allegheny"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B-53"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lemon Shot"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "John Collins"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "City Slicker"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flying Scotchman"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Champagne Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kamikaze"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Apple Karate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Veteran"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ace"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sidecar Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ice Pick #1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Afternoon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amaretto Stinger"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B-52"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Midnight Mint"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ACID"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sangria #1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jack's Vanilla Coke"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Raspberry Cooler"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Midnight Cowboy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bobby Burns Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Freddy Kruger"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zenmeister"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Black Russian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "A True Amaretto Sour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diesel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Royal Gin Fizz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bubble Gum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "252"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bombay Cassis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Royal Fizz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Apple Grande"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jitterbug"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amaretto Shake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Japanese Fizz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zima Blaster"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Alabama Slammer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amaretto Sunrise"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bramble"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Havana Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mojito #3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Allies Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Downshift"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amaretto Sunset"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Classic Old-Fashioned"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gin Daisy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Addington"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rail Splitter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Apple Berry Smoothie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The Jimmy Conway"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tomato Tang"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Black & Tan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Caipirissima"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sweet Sangria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thai Coffee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bloody Maria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Duchamp's Punch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jackhammer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "24k nightmare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lone Tree Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sunny Holiday Punch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Iced Coffee Fillip"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bellini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Loch Lomond"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sloe Gin Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Orange Whip"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dirty Martini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Angel Face"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Orange Oasis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amaretto Stone Sour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Buccaneer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Salty Dog"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gin Sling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Clover Club"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nutty Irishman"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Apple Cider Punch #1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pink Panty Pulldowns"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Casino"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "English Rose Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Abbey Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pink Penocha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Orangeade"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amaretto Liqueur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Atomic Lokade"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thai Iced Coffee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jam Donut"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "151 Florida Bushwacker"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gin And Tonic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mississippi Planters Punch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Banana Daiquiri"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Masala Chai"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Affinity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Brandon and Will's Coke Float"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amaretto Rose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Balmoral"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Barracuda"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fahrenheit 5000"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Queen Charlotte"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Godchild"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Caipirinha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rusty Nail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rum Cooler"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Margarita"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zizi Coin-coin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Absinthe #2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Derby"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "After Five"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Arise My Love"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Banana Strawberry Shake Daiquiri-type"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kentucky B And B"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Absolut Stress #2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Algonquin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thai Iced Tea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amaretto Tea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zorro"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Van Vleet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zorbatini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sangria - The World's Best"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Absolut Sex"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "French 75"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Adam Sunrise"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Abbey Martini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hot Chocolate to Die for"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Space Odyssey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sweet Tooth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bourbon Sour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amaretto And Cream"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bleeding Surgeon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "California Root Beer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bijou"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Addison"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tia-Maria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vampiro"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Iced Coffee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Apple Pie with A Crust"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Adam Bomb"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Adam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Talos Coffee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ABC"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Planter's Punch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lassi Khara"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Spritz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flaming Lamborghini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kentucky Colonel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sol Y Sombra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lassi - Mango"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rum Toddy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dark and Stormy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Quentin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cranberry Punch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rum Milk Punch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "A Furlong Too Late"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Victory Collins"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Moscow Mule"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Caribbean Boilermaker"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tipperary"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Turkeyball"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bahama Mama"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hunter's Moon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cherry Electric Lemonade"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wine Cooler"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Smut"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Blind Russian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Surf City Lifesaver"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Queen Elizabeth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hemingway Special"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Adam & Eve"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fruit Cooler"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Damned if you do"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Oatmeal Cookie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mimosa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The Evil Blue Thing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Blue Margarita"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Just a Moonmint"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Arctic Mouthwash"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Limona Corona"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lemon Drop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Waikiki Beachcomber"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Scotch Sour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hot Creamy Bush"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Strawberry Daiquiri"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amaretto Mist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Blue Hurricane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Black and Brown"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kool First Aid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Irish Curdling Cow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sex on the Beach"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "A Splash of Nash"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chicago Fizz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Arizona Twister"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "English Highball"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gin Sour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "A midsummernight dream"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mudslinger"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Brandy Flip"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ipamena"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Brain Fart"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Alice Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Port And Starboard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Applecar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Snakebite and Black"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Boston Sidecar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Texas Rattlesnake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aztec Punch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pink Gin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Apricot punch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bailey's Dream Shake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Girl From Ipanema"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flaming Dr. Pepper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Greyhound"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Melya"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Caribbean Orange Liqueur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Quick-sand"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tequila Sour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gluehwein"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Egg Nog - Healthy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Strawberry Margarita"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Corpse Reviver #2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Long Island Tea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Egg Cream"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Absolut Evergreen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rum Old-fashioned"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cuba Libre"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Paradise"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jack Rose Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kiss me Quick"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hawaiian Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gin Fizz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pisco Sour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rum Punch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Imperial Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rum Runner"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tequila Surprise"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Porto flip"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Old Fashioned"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Frisco Sour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Screaming Orgasm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Banana Milk Shake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cream Soda"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "After Dinner Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rosemary Blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3-Mile Long Island Iced Tea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Apricot Lady"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tequila Fizz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Quarter Deck Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yoghurt Cooler"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zippy's Revenge"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Martini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Brandy Alexander"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Angelica Liqueur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Egg Nog #4"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Singapore Sling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amaretto Sour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mango Orange Smoothie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "London Town"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Oreo Mudslide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pina Colada"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Horse's Neck"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Grass Skirt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "155 Belmont"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "California Lemonade"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Berry Deadly"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "National Aquarium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Americano"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Owen's Grandmother's Revenge"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Highland Fling Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gin Smash"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rum Screwdriver"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mulled Wine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dirty Nipple"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Poppy Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Whitecap Margarita"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Manhattan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Strawberry Lemonade"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Royal Flush"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dragonfly"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kioki Coffee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chocolate Monkey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Baby Guinness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ruby Tuesday"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Russian Spring Punch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Swedish Coffee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Campari Beer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vodka And Tonic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Frozen Mint Daiquiri"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Alaska Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Texas Sling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kiwi Papaya Smoothie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shark Attack"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Army special"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Salted Toffee Martini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gideon's Green Dinosaur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stone Sour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Creme de Menthe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Boulevardier"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dubonnet Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zambeer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The Last Word"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "'57 Chevy with a White License Plate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Queen Bee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tom Collins"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cosmopolitan Martini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Alexander"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Long vodka"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Martinez Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Citrus Coke"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Grasshopper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Foxy Lady"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zombie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bumble Bee #1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Godmother"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "French Negroni"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "1-900-FUK-MEUP"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vermouth Cassis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bacardi Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thriller"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Big Red"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chocolate Beverage"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sidecar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "69 Special"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bellini Martini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vesuvio"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ],
-      "types": []
     }
-  }
 }
