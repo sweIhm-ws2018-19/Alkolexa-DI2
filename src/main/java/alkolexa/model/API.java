@@ -19,7 +19,9 @@ import java.util.ArrayList;
 import javax.json.JsonObject;
 
 public class API {
-
+	
+	private static JsonObject aktuellerCocktail = null;
+	
 	private static final Logger logger = Logger.getLogger(API.class.getName());
 	// Returns the First found Cocktail
 	public static JsonObject searchForCocktail(String searchCocktail) {
@@ -49,6 +51,7 @@ public class API {
 
 		JsonObject jsonObj = JsonObjectFromUrl.getJsonObjectFromUrl(url);
 		JsonObject firstFoundCocktail = (JsonObject) jsonObj.get("drinks").asJsonArray().get(0);
+		aktuellerCocktail = firstFoundCocktail;
 		return firstFoundCocktail;
 	}
 	
@@ -62,6 +65,14 @@ public class API {
 		String instructions = cocktailJson.getString("strInstructions");
 		return instructions;
 	}
+	
+	public static String getRandomCocktailInstructions() {
+		if(aktuellerCocktail != null) {
+		String instructions = aktuellerCocktail.getString("strInstructions");
+		return instructions;
+		}
+		return null;
+	}
 
 	public static ArrayList<String> getCocktailIngredients(JsonObject cocktailJson) {
 		ArrayList<String> ingredients = new ArrayList<>();
@@ -72,6 +83,7 @@ public class API {
 		}
 		return ingredients;
 	}
+	
 
 	public static ArrayList<String> getCocktailMeasures(JsonObject cocktailJson) {
 		ArrayList<String> measures = new ArrayList<>();
