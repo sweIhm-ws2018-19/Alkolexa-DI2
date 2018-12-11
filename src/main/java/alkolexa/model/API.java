@@ -19,16 +19,15 @@ import javax.json.JsonArray;
 import javax.json.JsonObject;
 
 public class API {
-	
+
 	private static JsonObject aktuellerCocktail = null;
-	
+
 	private static final Logger logger = Logger.getLogger(API.class.getName());
 	// Returns the First found Cocktail
 
-	
 	public static JsonObject searchForCocktail(String searchCocktail) {
 		String url = "";
-		if(searchCocktail.length() == 0) {
+		if (searchCocktail.length() == 0) {
 			return null;
 		}
 		try {
@@ -36,7 +35,7 @@ public class API {
 					+ URLEncoder.encode(searchCocktail, "UTF-8");
 			System.out.println("Request: " + url);
 		} catch (UnsupportedEncodingException e) {
-			 logger.log(Level.WARNING, "Exception");
+			logger.log(Level.WARNING, "Exception");
 		}
 
 		JsonObject jsonObj = JsonObjectFromUrl.getJsonObjectFromUrl(url);
@@ -45,7 +44,6 @@ public class API {
 		return firstFoundCocktail;
 	}
 
-	
 	public static JsonObject randomCocktail() {
 		String url = "";
 		url = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
@@ -56,7 +54,7 @@ public class API {
 		aktuellerCocktail = firstFoundCocktail;
 		return firstFoundCocktail;
 	}
-	
+
 	public static String getCocktailName(JsonObject cocktailJson) {
 		String name = cocktailJson.getString("strDrink");
 		return name;
@@ -67,11 +65,11 @@ public class API {
 		String instructions = cocktailJson.getString("strInstructions");
 		return instructions;
 	}
-	
+
 	public static String getRandomCocktailInstructions() {
-		if(aktuellerCocktail != null) {
-		String instructions = aktuellerCocktail.getString("strInstructions");
-		return instructions;
+		if (aktuellerCocktail != null) {
+			String instructions = aktuellerCocktail.getString("strInstructions");
+			return instructions;
 		}
 		return null;
 	}
@@ -85,7 +83,6 @@ public class API {
 		}
 		return ingredients;
 	}
-	
 
 	public static ArrayList<String> getCocktailMeasures(JsonObject cocktailJson) {
 		ArrayList<String> measures = new ArrayList<>();
@@ -98,37 +95,42 @@ public class API {
 		}
 		return measures;
 	}
-	
-	//for test purpose
-	
-//	public static void main(String[] args) {
-//		getCocktailCategorys();
-//	}
-	
-	public static ArrayList<String> getCocktailCategorys(){
+
+	// for test purpose
+
+	public static void main(String[] args) {
+		getCocktailCategorys();
+		System.out.println(getCocktailName(getRandomCocktailFromCategory("Cocktail")));
+	}
+
+	public static ArrayList<String> getCocktailCategorys() {
 		ArrayList<String> categorys = new ArrayList<>();
-		JsonObject jsonObject = JsonObjectFromUrl.getJsonObjectFromUrl("https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list");
-		
+		JsonObject jsonObject = JsonObjectFromUrl
+				.getJsonObjectFromUrl("https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list");
+
 		JsonArray drinks = jsonObject.get("drinks").asJsonArray();
 		for (int i = 0; i < drinks.size(); i++) {
 			String catName = drinks.get(i).asJsonObject().get("strCategory").toString().replace("\"", "");
-			System.out.println(catName);
+			// System.out.println(catName);
 			categorys.add(catName);
 		}
 		return categorys;
 	}
-	
+
 	public static JsonObject getRandomCocktailFromCategory(String categoryName) {
-		
-		
-		//@TODO Implement properly
-		
-		//DUMMY IMPLEMENTATION 
-		
-		if(getCocktailCategorys().contains(categoryName)) {
+		// @TODO Implement properly
+		if (getCocktailCategorys().contains(categoryName)) {
+			JsonObject jsonObject = JsonObjectFromUrl
+					.getJsonObjectFromUrl("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=" + categoryName);
+			JsonArray categorys = jsonObject.get("drinks").asJsonArray();
+			int randomIndex = (int) (Math.random() * categorys.size());
 			
+			JsonObject randomCocktail = categorys.get(randomIndex).asJsonObject();
+			return randomCocktail;
+		} else {
+			System.out.println("Cocktail Cahtegory not available.");
+			return null;
 		}
 
-		return null;
 	}
 }
