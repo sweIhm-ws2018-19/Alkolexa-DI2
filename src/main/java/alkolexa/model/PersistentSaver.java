@@ -1,3 +1,11 @@
+/**********************************************************************
+*
+* Project Alkolexa
+* @author Anian Weber, weber11@hm.edu
+* @version 11.12.2018
+*
+***********************************************************************/
+
 package alkolexa.model;
 
 import java.io.UnsupportedEncodingException;
