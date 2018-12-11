@@ -4,7 +4,7 @@ package alkolexa.model;
 *
 * Project Alkolexa
 * @author Anian Weber, weber.anian@hm.edu
-* @version 26.11.2018
+* @version 11.12.2018
 * 
 * This Class Handels the API connection for the Alexa Skill "Alkolexa"
 *
@@ -15,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.ArrayList;
 
-
+import javax.json.JsonArray;
 import javax.json.JsonObject;
 
 public class API {
@@ -24,6 +24,8 @@ public class API {
 	
 	private static final Logger logger = Logger.getLogger(API.class.getName());
 	// Returns the First found Cocktail
+
+	
 	public static JsonObject searchForCocktail(String searchCocktail) {
 		String url = "";
 		if(searchCocktail.length() == 0) {
@@ -95,5 +97,41 @@ public class API {
 			currentMeasuresCount++;
 		}
 		return measures;
+	}
+	
+	public static void main(String[] args) {
+		getCocktailCategorys();
+	}
+	
+	
+	public static ArrayList<String> getCocktailCategorys(){
+		ArrayList<String> categorys = new ArrayList<>();
+		JsonObject jsonObject = JsonObjectFromUrl.getJsonObjectFromUrl("https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list");
+		
+		JsonArray drinks = jsonObject.get("drinks").asJsonArray();
+		for (int i = 0; i < drinks.size(); i++) {
+			String catName = drinks.get(i).asJsonObject().get("strCategory").toString().replace("\"", "");
+			System.out.println(catName);
+			categorys.add(catName);
+		}
+		return categorys;
+	}
+	
+	
+	
+
+	
+	public static JsonObject getRandomCocktailFromCategory(String categoryName) {
+		
+		
+		//@TODO Implement proberly
+		
+		//DUMMY IMPLEMENTATION 
+		
+		if(getCocktailCategorys().contains(categoryName)) {
+			
+		}
+
+		return null;
 	}
 }
