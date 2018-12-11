@@ -99,10 +99,11 @@ public class API {
 		return measures;
 	}
 	
-	public static void main(String[] args) {
-		getCocktailCategorys();
-	}
+	//for test purpose
 	
+//	public static void main(String[] args) {
+//		getCocktailCategorys();
+//	}
 	
 	public static ArrayList<String> getCocktailCategorys(){
 		ArrayList<String> categorys = new ArrayList<>();
@@ -117,14 +118,10 @@ public class API {
 		return categorys;
 	}
 	
-	
-	
-
-	
 	public static JsonObject getRandomCocktailFromCategory(String categoryName) {
 		
 		
-		//@TODO Implement proberly
+		//@TODO Implement properly
 		
 		//DUMMY IMPLEMENTATION 
 		
