@@ -45,7 +45,7 @@
                     "name": "RandomCocktailInstructions",
                     "slots": [],
                     "samples": [
-                        "wie lauten seine zutaten"
+                        "wie mache ich ihn"
                     ]
                 },
                 {
@@ -69,7 +69,7 @@
                         }
                     ],
                     "samples": [
-                        "instructions {cocktail}"
+                        "wie mache ich {cocktail}"
                     ]
                 }
             ],
