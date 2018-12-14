@@ -43,5 +43,5 @@ Implemetierte Funktionen:
 
 ## Sprint 3
 
-Ziel in Sprint 3 ist es Alkolexa zu vollenden. Hierzu werden unsere letzten User-Storys umgesetzt. Weiterhin werden wir die Sprache das Skill auf Englisch festlegen. Neben neuen Features wird der Code zu letzt noch stablisiert und Refactored sowie Dokumentiert. 
+Ziel in Sprint 3 ist es Alkolexa zu vollenden. Hierzu werden unsere letzten User-Storys umgesetzt. Weiterhin werden wir die Sprache das Skill auf Englisch festlegen. Neben neuen Features wird der Code zuletzt noch stablisiert und Refactored sowie Dokumentiert. 
 
