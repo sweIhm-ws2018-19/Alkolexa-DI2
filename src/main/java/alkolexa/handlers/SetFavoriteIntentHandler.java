@@ -14,7 +14,6 @@ import com.amazon.ask.response.ResponseBuilder;
 
 import java.util.Collections;
 import java.util.Map;
-import java.util.Optional;
 
 import static alkolexa.handlers.GetFavoriteIntentHandler.FAVORITE_KEY;
 import static alkolexa.handlers.GetFavoriteIntentHandler.FAVORITE_SLOT;

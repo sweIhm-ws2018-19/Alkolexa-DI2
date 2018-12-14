@@ -16,8 +16,13 @@ import com.amazon.ask.model.Slot;
 
 import alkolexa.model.API;
 
-//org.apache.maven.plugins:maven-assembly-plugin:2.6:assembly -DdescriptorId=jar-with-dependencies package
-
+/**
+ * Class for the Intent - Search for a Cocktail 
+ * This Class represents a Intent to Search for a Cocktail 
+ * given by the User.
+ * @author Team Alkolex
+ *
+ */
 public class SearchCocktailIntentHandler  implements RequestHandler {
 
 	private Map<String, Slot> slots = null;
@@ -25,11 +30,18 @@ public class SearchCocktailIntentHandler  implements RequestHandler {
 	private com.amazon.ask.model.Request request = null;
 	private Intent intent = null;
 
+	/**
+	 * canHandle is a method to match the Speechpattern with the input of the user.
+	 */
 	@Override
 	public boolean canHandle(HandlerInput input) {
 		return input.matches(intentName("SearchCocktailIntent"));
 	}
 
+	/**
+	 * Handle Method to Handle a search Request.
+	 * @param input will be the spoken text from the user
+	 */
 	@Override
 	public Optional<Response> handle(HandlerInput input) {
 		request = input.getRequestEnvelope().getRequest();
@@ -60,14 +72,27 @@ public class SearchCocktailIntentHandler  implements RequestHandler {
 		}
 	}
 	
+	/**
+	 * Method to check whether a Request is Empty or not.
+	 * @return Will return true in case the request is empty. Empty is considered as null.
+	 */
 	public boolean emptyRequest() {
 		return slots.get("cocktail").getValue() == null;
 	}
 
+	/**
+	 * Getter for the Intent
+	 * @return will return the intent
+	 */
 	public Intent getIntent() {
 		return intent;
 	}
 
+	
+	/**
+	 * Setter for the Intent
+	 * @param intent as parameter
+	 */
 	public void setIntent(Intent intent) {
 		this.intent = intent;
 	}

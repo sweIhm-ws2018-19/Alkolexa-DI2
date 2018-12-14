@@ -1,7 +1,6 @@
 package alkolexa.handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
-import com.amazon.ask.model.Response;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
