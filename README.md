@@ -15,7 +15,7 @@ Alkolexa ist ein Amazon Alexa Skill mit dessen Hilfe der Nutzer sich Cocktailrez
 
 ## Wie bekomme ich Alkolexa?
 
-Alkolexa wird ab dem **25.Dezember.2018** auf Amazon.com verfügbar sein!
+Alkolexa wird ab dem **8.Januar.2019** auf Amazon.com verfügbar sein!
 
 _Hol dir Alkolexa_ : [Alkolexa - Amazon.com](https://github.com/sweIhm-ws2018-19/skillproject-di-2)
 
@@ -33,7 +33,7 @@ Ziel in Sprint 1 ist es den Alexa Skill Buildfähig machen. Ebenso unsere Tools 
 
 ## Sprint 2
 
-Zeil in Sprint 2 ist es Alkolexa mehr und mehr Fähigkeitenm zu geben. Hierzu soll der Zweig für die Auswahl von Cocktails ausgearbeitet werden. Zum Ende von Sprint 2 sind funktionen wie RandomCocktailauswahl implementiert und getestet.
+Ziel in Sprint 2 ist es Alkolexa mehr und mehr Fähigkeitenm zu geben. Hierzu soll der Zweig für die Auswahl von Cocktails ausgearbeitet werden. Zum Ende von Sprint 2 sind funktionen wie RandomCocktailauswahl implementiert und getestet.
 
 Implemetierte Funktionen: 
 
@@ -43,4 +43,5 @@ Implemetierte Funktionen:
 
 ## Sprint 3
 
---
+Ziel in Sprint 3 ist es Alkolexa zu vollenden. Hierzu werden unsere letzten User-Storys umgesetzt. Weiterhin werden wir die Sprache das Skill auf Englisch festlegen. Neben neuen Features wird der Code zuletzt noch stablisiert und Refactored sowie Dokumentiert. 
+
