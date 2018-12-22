@@ -24,7 +24,8 @@ import alkolexa.handlers.InstructionsIntentHandler;
 import alkolexa.handlers.LaunchRequestHandler;
 import alkolexa.handlers.RandomCocktailIntentHandler;
 import alkolexa.handlers.SessionEndedRequestHandler;
-import alkolexa.handlers.SearchCocktailIntentHandler;;
+import alkolexa.handlers.SearchCocktailIntentHandler;
+import alkolexa.handlers.SearchCocktailCategoryIntentHandler;;
 
 
 public class AlkolexaStreamHandler extends SkillStreamHandler {
@@ -38,6 +39,7 @@ public class AlkolexaStreamHandler extends SkillStreamHandler {
                         new HelpIntentHandler(),
                         new FallbackIntentHandler(),
                         new RandomCocktailIntentHandler(),
+                        new SearchCocktailCategoryIntentHandler(),
                         new InstructionsIntentHandler(),
                         new SearchCocktailIntentHandler()
                         )

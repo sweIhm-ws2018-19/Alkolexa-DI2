@@ -56,7 +56,7 @@ public class SearchCocktailIntentHandler  implements RequestHandler {
 					.build();
 		} else {
 			
-			JsonObject response = API.searchForCocktail(slots.get("cocktail").getValue());
+			JsonObject response =  API.searchForCocktail(slots.get("cocktail").getValue());
 			if (response == null) {
 				return input.getResponseBuilder()
 						.withSpeech("Entschuldige ich konnte keinen Cocktail mit diesem Namen finden")

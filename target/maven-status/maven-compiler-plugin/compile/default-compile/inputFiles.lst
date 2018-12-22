@@ -1,6 +1,8 @@
 D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\AlkolexaStreamHandler.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\model\PersistentSaver.java
 D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\model\API.java
 D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\model\JsonObjectFromUrl.java
+D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\handlers\SearchCocktailCategoryIntentHandler.java
 D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\handlers\SearchCocktailIntentHandler.java
 D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\handlers\SessionEndedRequestHandler.java
 D:\Dokumente\eclipse-workspace\alkolexa\Alkolexa-DI2\src\main\java\alkolexa\handlers\HelpIntentHandler.java
