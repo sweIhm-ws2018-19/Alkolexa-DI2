@@ -12,12 +12,13 @@ import com.amazon.ask.model.Request;
 import com.amazon.ask.model.Slot;
 import com.amazon.ask.response.ResponseBuilder;
 
+import alkolexa.SpeechStrings;
 import alkolexa.model.PersistentSaver;
 
-import java.util.Collections;
+//import java.util.Collections;
 import java.util.Map;
 
-import static alkolexa.handlers.GetFavoriteIntentHandler.FAVORITE_KEY;
+//import static alkolexa.handlers.GetFavoriteIntentHandler.FAVORITE_KEY;
 import static alkolexa.handlers.GetFavoriteIntentHandler.FAVORITE_SLOT;
 
 public class SetFavoriteIntentHandler implements RequestHandler {
@@ -40,18 +41,17 @@ public class SetFavoriteIntentHandler implements RequestHandler {
 
 		if (favoriteCocktailSlot != null) {
 			String favoriteCocktail = favoriteCocktailSlot.getValue();
-//			input.getAttributesManager().setSessionAttributes(Collections.singletonMap(FAVORITE_KEY, favoriteCocktail));
+			// input.getAttributesManager().setSessionAttributes(Collections.singletonMap(FAVORITE_KEY,
+			// favoriteCocktail));
 			PersistentSaver.setFavorite(favoriteCocktail);
 
-			speechText = String.format(
-					"Deine Favorite Cocktail ist %s. Du kannst mich jetzt nach Deinem Favorite Cocktail fragen. "
-							+ "Frage einfach: was ist mein Favorite Cocktail?",
-					favoriteCocktail);
-			repromptText = "Frage nach meinem Favorite Cocktail.";
+			speechText = SpeechStrings.getSetfavoritePositive0() + favoriteCocktail
+					+ SpeechStrings.getSetfavoritePositive0();
+			repromptText = SpeechStrings.getSetfavoritePositiveRepromt();
 
 		} else {
-			speechText = "Ich kenne Dein Favorite Cocktail nicht. Bitte versuche es noch einmal.";
-			repromptText = "Ich weiss nicht welches Dein Favorite Cocktail ist. Sag mir Dein Favorite Cocktail. Sage zum Beispiel: Mein Favorite Cocktail ist Mochito.";
+			speechText = SpeechStrings.getSetfavoriteNegative();
+			repromptText = SpeechStrings.getSetfavoriteNegativeRepromt();
 			isAskResponse = true;
 		}
 

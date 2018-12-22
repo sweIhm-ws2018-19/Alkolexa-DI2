@@ -6,6 +6,7 @@ import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
 
+import alkolexa.SpeechStrings;
 import alkolexa.model.PersistentSaver;
 
 public class GetFavoriteIntentHandler implements RequestHandler {
@@ -20,12 +21,14 @@ public class GetFavoriteIntentHandler implements RequestHandler {
 	@Override
 	public Optional<Response> handle(HandlerInput input) {
 		String speechText;
-//		String favorite = (String) input.getAttributesManager().getSessionAttributes().get(FAVORITE_KEY);
+		// String favorite = (String)
+		// input.getAttributesManager().getSessionAttributes().get(FAVORITE_KEY);
 		String favorite = PersistentSaver.getFavorite();
+
 		if (favorite != null && !favorite.isEmpty())
-			speechText = String.format("Dein Favorite Cocktail ist %s.", favorite);
+			speechText = SpeechStrings.getGetfavoritePositive() + favorite + ".";
 		else
-			speechText = "Ich kenne dein Favorite Cocktail nicht. Sag mir dein Favorite Cocktail. Sage zum Beispiel: Mein Favorite Cocktail ist Mochito.";
+			speechText = SpeechStrings.getGetfavoriteNegative();
 		return input.getResponseBuilder() //
 				.withSpeech(speechText) //
 				.withReprompt("") //
