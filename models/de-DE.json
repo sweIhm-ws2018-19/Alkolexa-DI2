@@ -71,6 +71,27 @@
                     "samples": [
                         "wie mache ich {cocktail}"
                     ]
+                },
+                {
+                    "name": "SetFavorite",
+                    "slots": [
+                        {
+                            "name": "cocktail",
+                            "type": "list_of_Cocktails"
+                        }
+                    ],
+                    "samples": [
+                        "mein favorit ist {cocktail}",
+                        "mein favorit cocktail ist {cocktail}"
+                    ]
+                },
+                {
+                    "name": "GetFavorite",
+                    "slots": [],
+                    "samples": [
+                        "was ist mein favorit",
+                        "welcher ist mein favorit cocktail"
+                    ]
                 }
             ],
             "types": [
