@@ -45,3 +45,11 @@ Implemetierte Funktionen:
 
 Ziel in Sprint 3 ist es Alkolexa zu vollenden. Hierzu werden unsere letzten User-Storys umgesetzt. Weiterhin werden wir die Sprache das Skill auf Englisch festlegen. Neben neuen Features wird der Code zuletzt noch stablisiert und Refactored sowie Dokumentiert. 
 
+## Umgang mit Alkolexa
+
+💬 "zufällig" / "zufälliger Cocktail" ➡️ Um sich von Alkolexa einen "Random-Cocktail" generieren zu lassen.
+
+💬 "Suche Zoro" ➡️ Um Alkolexa nach dem Cocktail suchen zu lassen.
+
+💬 "wie mache ich ihn " ➡️ Um sich von Alkolexa die Zutaten des Skills ausgeben zu lassen. 
+
