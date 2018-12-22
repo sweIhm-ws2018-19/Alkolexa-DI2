@@ -76,13 +76,13 @@
                     "name": "SetFavorite",
                     "slots": [
                         {
-                            "name": "cocktail",
+                            "name": "Favorite",
                             "type": "list_of_Cocktails"
                         }
                     ],
                     "samples": [
-                        "mein favorit ist {cocktail}",
-                        "mein favorit cocktail ist {cocktail}"
+                        "mein favorit ist {Favorite}",
+                        "mein favorit cocktail ist {Favorite}"
                     ]
                 },
                 {
