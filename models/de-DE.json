@@ -34,8 +34,34 @@
                     ]
                 },
                 {
-                    "name": "RandomCocktail",
+                    "name": "SetFavorite",
+                    "slots": [
+                        {
+                            "name": "Favorite",
+                            "type": "list_of_Cocktails"
+                        }
+                    ],
+                    "samples": [
+                        "mein favorit ist {Favorite}",
+                        "mein favorit cocktail ist {Favorite}"
+                    ]
+                },
+                {
+                    "name": "GetFavorite",
                     "slots": [],
+                    "samples": [
+                        "was ist mein favorit",
+                        "welcher ist mein favorit cocktail"
+                    ]
+                },
+                {
+                    "name": "RandomCocktail",
+                    "slots": [
+                        {
+                            "name": "cocktail",
+                            "type": "list_of_Cocktails"
+                        }
+                    ],
                     "samples": [
                         "zufälliger cocktail",
                         "zufällig"
@@ -61,6 +87,18 @@
                     ]
                 },
                 {
+                    "name": "SearchCocktailCategory",
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "list_of_Category"
+                        }
+                    ],
+                    "samples": [
+                        "suche Kategorie {category} "
+                    ]
+                },
+                {
                     "name": "CocktailInstructionsIntent",
                     "slots": [
                         {
@@ -73,25 +111,8 @@
                     ]
                 },
                 {
-                    "name": "SetFavorite",
-                    "slots": [
-                        {
-                            "name": "Favorite",
-                            "type": "list_of_Cocktails"
-                        }
-                    ],
-                    "samples": [
-                        "mein favorit ist {Favorite}",
-                        "mein favorit cocktail ist {Favorite}"
-                    ]
-                },
-                {
-                    "name": "GetFavorite",
-                    "slots": [],
-                    "samples": [
-                        "was ist mein favorit",
-                        "welcher ist mein favorit cocktail"
-                    ]
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
                 }
             ],
             "types": [
@@ -1851,6 +1872,66 @@
                         {
                             "name": {
                                 "value": "Vesuvio"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "list_of_Category",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Ordinary Drink"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cocktail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Milk / Float / Shake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Other/Unknown"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cocoa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shot"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Coffee / Tea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Homemade Liqueur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Punch / Party Drink"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Beer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Soft Drink / Soda"
                             }
                         }
                     ]
