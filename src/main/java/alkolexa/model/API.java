@@ -56,6 +56,9 @@ public class API {
 	}
 
 	public static String getCocktailName(JsonObject cocktailJson) {
+		if(cocktailJson == null) {
+			return null;
+		}
 		String name = cocktailJson.getString("strDrink");
 		aktuellerCocktail = cocktailJson;
 		return name;
