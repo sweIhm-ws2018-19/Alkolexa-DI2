@@ -64,26 +64,17 @@
                     ],
                     "samples": [
                         "zufälliger cocktail",
-                        "zufällig"
+                        "zufällig",
+                        "ich möchte einen zufälligen Cocktail",
+                        "sag mir einen zufälligen Cocktail "
                     ]
                 },
                 {
                     "name": "RandomCocktailInstructions",
                     "slots": [],
                     "samples": [
-                        "wie mache ich ihn"
-                    ]
-                },
-                {
-                    "name": "SearchCocktailIntent",
-                    "slots": [
-                        {
-                            "name": "cocktail",
-                            "type": "list_of_Cocktails"
-                        }
-                    ],
-                    "samples": [
-                        "suche {cocktail}"
+                        "wie mache ich ihn",
+                        "sag mir wie ich ihn mache"
                     ]
                 },
                 {
@@ -95,7 +86,22 @@
                         }
                     ],
                     "samples": [
-                        "suche Kategorie {category} "
+                        "kategorie {category} ",
+                        "suche mir einen {category}"
+                    ]
+                },
+                {
+                    "name": "SearchCocktailIntent",
+                    "slots": [
+                        {
+                            "name": "cocktail",
+                            "type": "list_of_Cocktails"
+                        }
+                    ],
+                    "samples": [
+                        "suche {cocktail}",
+                        "wie mache ich {cocktail}",
+                        "finde {cocktail}"
                     ]
                 },
                 {
