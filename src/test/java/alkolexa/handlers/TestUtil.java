@@ -43,18 +43,24 @@ class TestUtil {
 
     public static Response standardTestForHandle(RequestHandler handler) {
 
+    	return parameterizedTestForHandle(handler , "radler");
+
+    }
+    
+    
+    static Response parameterizedTestForHandle(RequestHandler handler, String cocktail) {
+
         final Map<String, Object> sessionAttributes = new HashMap<>();
-        sessionAttributes.put("list_of_Cocktails", "Test");
-        final HandlerInput inputMock = TestUtil.mockHandlerInput("Zinger");
+        sessionAttributes.put("LIST_OF_Cocktail", "radler");
+        final HandlerInput inputMock = TestUtil.mockHandlerInput(cocktail);
         final Optional<Response> res = handler.handle(inputMock);
 
         assertTrue(res.isPresent());
         final Response response = res.get();
 
-        assertFalse(response.getShouldEndSession());
+
         assertNotEquals("Test", response.getReprompt());
         assertNotNull(response.getOutputSpeech());
         return response;
-
     }
 }
