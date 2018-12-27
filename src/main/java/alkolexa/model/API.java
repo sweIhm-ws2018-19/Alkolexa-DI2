@@ -57,6 +57,7 @@ public class API {
 
 	public static String getCocktailName(JsonObject cocktailJson) {
 		String name = cocktailJson.getString("strDrink");
+		aktuellerCocktail = cocktailJson;
 		return name;
 	}
 
@@ -111,7 +112,7 @@ public class API {
 		JsonArray drinks = jsonObject.get("drinks").asJsonArray();
 		for (int i = 0; i < drinks.size(); i++) {
 			String catName = drinks.get(i).asJsonObject().get("strCategory").toString().replace("\"", "");
-			// System.out.println(catName);
+			catName = catName.toLowerCase();
 			categorys.add(catName);
 		}
 		return categorys;
@@ -119,7 +120,9 @@ public class API {
 
 	public static JsonObject getRandomCocktailFromCategory(String categoryName) {
 		// @TODO Implement properly
+	
 		if (getCocktailCategorys().contains(categoryName)) {
+			//categoryName = categoryName.toLowerCase();
 			JsonObject jsonObject = JsonObjectFromUrl
 					.getJsonObjectFromUrl("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=" + categoryName);
 			JsonArray categorys = jsonObject.get("drinks").asJsonArray();

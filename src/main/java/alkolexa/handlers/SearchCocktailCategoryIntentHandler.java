@@ -17,13 +17,13 @@ import com.amazon.ask.model.Slot;
 import alkolexa.model.API;
 
 /**
- * Class for the Intent - Search for a Cocktail 
- * This Class represents a Intent to Search for a Cocktail 
- * given by the User.
+ * Class for the Intent - Search for a Cocktail This Class represents a Intent
+ * to Search for a Cocktail given by the User.
+ * 
  * @author Team Alkolex
  *
  */
-public class SearchCocktailCategoryIntentHandler  implements RequestHandler {
+public class SearchCocktailCategoryIntentHandler implements RequestHandler {
 
 	private Map<String, Slot> slots = null;
 	private IntentRequest intentRequest = null;
@@ -40,6 +40,7 @@ public class SearchCocktailCategoryIntentHandler  implements RequestHandler {
 
 	/**
 	 * Handle Method to Handle a search Request.
+	 * 
 	 * @param input will be the spoken text from the user
 	 */
 	@Override
@@ -48,49 +49,35 @@ public class SearchCocktailCategoryIntentHandler  implements RequestHandler {
 		intentRequest = (IntentRequest) request;
 		intent = intentRequest.getIntent();
 		slots = intent.getSlots();
-		if (emptyRequest()) {
+
+		String kategorie = slots.get("category").getValue();
+		String name = API.getCocktailName(API.getRandomCocktailFromCategory(kategorie));
+		if (name == null) {
 			return input.getResponseBuilder()
-					.withSimpleCard("", "") // Some error Messages are missing
-					.withSpeech("") // Some error Messages are missing
-					.withShouldEndSession(false)
-					.build();
+					.withSpeech("Entschuldige ich konnte keinen Cocktail mit dieser Category finden")
+					.withShouldEndSession(false).build();
 		} else {
-			
-			JsonObject response = API.getRandomCocktailFromCategory(slots.get("category").getValue());
-			if (response == null) {
-				return input.getResponseBuilder()
-						.withSpeech("Entschuldige ich konnte keinen Cocktail mit dieser Category finden")
-						.withShouldEndSession(false)
-						.build();
-			} else {
-				return input.getResponseBuilder()
-						.withSpeech("Ich habe"  + API.getCocktailName(API.getRandomCocktailFromCategory(slots.get("category").getValue())) + " gefunden.")
-						.withShouldEndSession(false)
-						.build();
-			}
-			
+			return input.getResponseBuilder()
+					.withSpeech("Ich habe "
+							+ name
+							+ " gefunden.")
+					.withShouldEndSession(false).build();
 		}
-	}
-	
-	/**
-	 * Method to check whether a Request is Empty or not.
-	 * @return Will return true in case the request is empty. Empty is considered as null.
-	 */
-	public boolean emptyRequest() {
-		return slots.get("category").getValue() == null;
+
 	}
 
 	/**
 	 * Getter for the Intent
+	 * 
 	 * @return will return the intent
 	 */
 	public Intent getIntent() {
 		return intent;
 	}
 
-	
 	/**
 	 * Setter for the Intent
+	 * 
 	 * @param intent as parameter
 	 */
 	public void setIntent(Intent intent) {

@@ -36,6 +36,11 @@ public class ApiTest {
 		ingredients.add("7-Up");
 		Assert.assertEquals(ingredients,API.getCocktailIngredients(API.searchForCocktail("radler")));
 	}
+	
+	@Test
+	public void CocktailCategorySearchTest() {
+		Assert.assertNotNull(API.getRandomCocktailFromCategory("cocktail"));
+	}
 
 	@Test
 	public void CocktailMeasuresTest() {
