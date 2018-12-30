@@ -47,9 +47,12 @@ Ziel in Sprint 3 ist es Alkolexa zu vollenden. Hierzu werden unsere letzten User
 
 ## Umgang mit Alkolexa
 
-💬 "zufällig" / "zufälliger Cocktail" ➡️ Um sich von Alkolexa einen "Random-Cocktail" generieren zu lassen.
+💬 "ich möchte einen zufälligen Cocktail" ➡️ Um sich von Alkolexa einen "Random-Cocktail" generieren zu lassen.
 
-💬 "Suche Zoro" ➡️ Um Alkolexa nach dem Cocktail suchen zu lassen.
+💬 "finde Zoro" ➡️ Um Alkolexa nach dem Cocktail suchen zu lassen.
 
-💬 "wie mache ich ihn " ➡️ Um sich von Alkolexa die Zutaten des Skills ausgeben zu lassen. 
+💬 "sag mir wie ich ihn mache" ➡️ Um sich von Alkolexa die Zutaten des Skills ausgeben zu lassen. 
+
+💬 "suche mir einen 'fruchtigen' " ➡️ Um sich von Alkolexa einen zufälligen Cocktail der Kategorie "Fruchtig" ausgeben zulassen
+
 
