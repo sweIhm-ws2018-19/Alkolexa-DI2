@@ -45,6 +45,12 @@ Implemetierte Funktionen:
 
 Ziel in Sprint 3 ist es Alkolexa zu vollenden. Hierzu werden unsere letzten User-Storys umgesetzt. Weiterhin werden wir die Sprache das Skill auf Englisch festlegen. Neben neuen Features wird der Code zuletzt noch stablisiert und Refactored sowie Dokumentiert. 
 
+Umgesetzt in Sprint 3:
+  - Kategorie suche mit Alkolexa
+  - Fehlerbehebung mit verschiedenen Intents
+  - Finale Version von Alkolexa erstellt
+  
+
 ## Umgang mit Alkolexa
 
 💬 "ich möchte einen zufälligen Cocktail" ➡️ Um sich von Alkolexa einen "Random-Cocktail" generieren zu lassen.
