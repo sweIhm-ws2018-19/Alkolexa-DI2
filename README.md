@@ -53,8 +53,8 @@ Umgesetzt in Sprint 3:
 
 💬 "finde Zoro" ➡️ Um Alkolexa nach dem Cocktail suchen zu lassen.
 
-💬 "sag mir wie ich ihn mache" ➡️ Um sich von Alkolexa die Zutaten des Skills ausgeben zu lassen. 
+💬 "sag mir wie ich ihn mache" ➡️ Um sich von Alkolexa die Zutaten des Cocktails ausgeben zu lassen. 
 
-💬 "suche mir einen 'Shot' " ➡️ Um sich von Alkolexa einen zufälligen Cocktail der Kategorie "Fruchtig" ausgeben zulassen
+💬 "suche mir einen 'Shot' " ➡️ Um sich von Alkolexa einen zufälligen Cocktail der Kategorie "Shot" ausgeben zulassen
 
 
