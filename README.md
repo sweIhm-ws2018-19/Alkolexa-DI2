@@ -15,7 +15,7 @@ Alkolexa ist ein Amazon Alexa Skill mit dessen Hilfe der Nutzer sich Cocktailrez
 
 ## Wie bekomme ich Alkolexa?
 
-Alkolexa wird ab dem **8.Januar.2019** auf GitHub verfügbar sein!
+Alkolexa wird ab dem **8. Januar. 2019** auf GitHub verfügbar sein!
 
 ## Unserer Prototype 
 
@@ -39,13 +39,12 @@ Implemetierte Funktionen:
 
 ## Sprint 3
 
-Ziel in Sprint 3 ist es Alkolexa zu vollenden. Hierzu werden unsere letzten User-Storys umgesetzt. Weiterhin werden wir die Sprache das Skill auf Englisch festlegen. Neben neuen Features wird der Code zuletzt noch stablisiert und Refactored sowie Dokumentiert. 
+Ziel in Sprint 3 ist es Alkolexa zu vollenden. Hierzu werden unsere letzten User-Storys umgesetzt. Neben neuen Features wird der Code zuletzt noch stablisiert und Refactored sowie Dokumentiert. 
 
 Umgesetzt in Sprint 3:
   - Kategorie suche mit Alkolexa
   - Fehlerbehebung mit verschiedenen Intents
   - Finale Version von Alkolexa erstellt
-  
 
 ## Umgang mit Alkolexa
 
