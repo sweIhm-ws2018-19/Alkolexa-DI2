@@ -15,11 +15,7 @@ Alkolexa ist ein Amazon Alexa Skill mit dessen Hilfe der Nutzer sich Cocktailrez
 
 ## Wie bekomme ich Alkolexa?
 
-Alkolexa wird ab dem **8.Januar.2019** auf Amazon.com verfügbar sein!
-
-_Hol dir Alkolexa_ : [Alkolexa - Amazon.com](https://github.com/sweIhm-ws2018-19/skillproject-di-2)
-
-_Anmerkung: Der oben angegebene Link für momentan nur auf dieses Github-Repositiory_
+Alkolexa wird ab dem **8.Januar.2019** auf GitHub verfügbar sein!
 
 ## Unserer Prototype 
 
