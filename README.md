@@ -59,6 +59,6 @@ Umgesetzt in Sprint 3:
 
 💬 "sag mir wie ich ihn mache" ➡️ Um sich von Alkolexa die Zutaten des Skills ausgeben zu lassen. 
 
-💬 "suche mir einen 'fruchtigen' " ➡️ Um sich von Alkolexa einen zufälligen Cocktail der Kategorie "Fruchtig" ausgeben zulassen
+💬 "suche mir einen 'Shot' " ➡️ Um sich von Alkolexa einen zufälligen Cocktail der Kategorie "Fruchtig" ausgeben zulassen
 
 
