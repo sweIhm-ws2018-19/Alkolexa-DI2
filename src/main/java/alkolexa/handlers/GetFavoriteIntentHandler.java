@@ -8,6 +8,9 @@ import com.amazon.ask.model.Response;
 import alkolexa.model.PersistentSaver;
 
 public class GetFavoriteIntentHandler implements RequestHandler {
+	public static final String FAVORITE_KEY = "FAVORITE";
+	public static final String FAVORITE_SLOT = "Favorite";
+	
 	/**
 	 * Method to Handle a Input.
 	 */

@@ -15,6 +15,7 @@ import alkolexa.model.PersistentSaver;
 
 
 public class SetFavoriteIntentHandler implements RequestHandler {
+	
 	private Map<String, Slot> slots = null;
 	private IntentRequest intentRequest = null;
 	private com.amazon.ask.model.Request request = null;
@@ -41,8 +42,8 @@ public class SetFavoriteIntentHandler implements RequestHandler {
 			slots = intent.getSlots();
 			if (emptyRequest()) {
 				return input.getResponseBuilder()
-						.withSimpleCard("", "") // Some error Messages are missing
-						.withSpeech("") // Some error Messages are missing
+						.withSimpleCard("", "")
+						.withSpeech("")
 						.withShouldEndSession(false)
 						.build();
 			} else {
