@@ -34,29 +34,37 @@ public class SetFavoriteIntentHandler implements RequestHandler {
 	 */
 	@Override
 	public Optional<Response> handle(HandlerInput input) {
-		request = input.getRequestEnvelope().getRequest();
-		intentRequest = (IntentRequest) request;
-		intent = intentRequest.getIntent();
-		slots = intent.getSlots();
-		if (emptyRequest()) {
-			return input.getResponseBuilder()
-					.withSimpleCard("", "") // Some error Messages are missing
-					.withSpeech("") // Some error Messages are missing
-					.withShouldEndSession(false)
-					.build();
-		} else {
-			JsonObject response =  API.searchForCocktail(slots.get("cocktail").getValue());
-			try {
-				PersistentSaver.setFavorite(API.getCocktailName(response));
+		try {
+			request = input.getRequestEnvelope().getRequest();
+			intentRequest = (IntentRequest) request;
+			intent = intentRequest.getIntent();
+			slots = intent.getSlots();
+			if (emptyRequest()) {
 				return input.getResponseBuilder()
-						.withSpeech("Ich habe deinen Cocktail " + API.getCocktailName(response) +  " als Favoriten gespeichert.")
+						.withSimpleCard("", "") // Some error Messages are missing
+						.withSpeech("") // Some error Messages are missing
 						.withShouldEndSession(false)
 						.build();
-			} catch(Exception e) {
-				System.out.println("Cannot set this Cocktail to FAV.Cock");
+			} else {
+				JsonObject response =  API.searchForCocktail(slots.get("cocktail").getValue());
+				try {
+					PersistentSaver.setFavorite(API.getCocktailName(response));
+					return input.getResponseBuilder()
+							.withSpeech("Ich habe deinen Cocktail " + API.getCocktailName(response) +  " als Favoriten gespeichert.")
+							.withShouldEndSession(false)
+							.build();
+				} catch(Exception e) {
+					System.out.println("Cannot set this Cocktail to FAV.Cock");
+				}
+				return input.getResponseBuilder()
+						.withSpeech("Ich konnte leider kein Favoriten speichern")
+						.withShouldEndSession(false)
+						.build();
 			}
+		} catch (Exception e) {
+			System.out.println(e);
 			return input.getResponseBuilder()
-					.withSpeech("Ich konnte leider kein Favoriten speichern")
+					.withSpeech("Ein problem ist aufgetreten")
 					.withShouldEndSession(false)
 					.build();
 		}
