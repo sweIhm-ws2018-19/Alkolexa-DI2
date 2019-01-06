@@ -25,7 +25,7 @@ public class SetFavoriteIntentHandler implements RequestHandler {
 	 */
 	@Override
 	public boolean canHandle(HandlerInput input) {
-		return input.matches(intentName("SearchCocktailIntent"));
+		return input.matches(intentName("SetFavorite"));
 	}
 
 	/**

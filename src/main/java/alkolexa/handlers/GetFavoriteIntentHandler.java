@@ -22,7 +22,7 @@ public class GetFavoriteIntentHandler implements RequestHandler {
 	@Override
 	public Optional<Response> handle(HandlerInput input) {
 		String favorite = PersistentSaver.getFavorite();
-		if(favorite == null || favorite.equals("") || favorite.length() < 2) {
+		if(favorite.equals(null) || favorite.equals("") || favorite.length() < 2) {
 			return input.getResponseBuilder()
 					.withSpeech("Du hast noch kein lieblings Cocktail hinzugefuegt")
 					.withShouldEndSession(false)
