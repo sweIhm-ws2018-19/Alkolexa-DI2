@@ -103,7 +103,7 @@ public class API {
 	/**
 	 * All Ingredients of a Cocktail from the API
 	 * @param cocktailJson name of the Cocktail
-	 * @return will return an Arraylist<String> containing all Ing. of the Cocktail
+	 * @return will return an Arraylist of Strings containing all Ing. of the Cocktail
 	 */
 	public static ArrayList<String> getCocktailIngredients(JsonObject cocktailJson) {
 		ArrayList<String> ingredients = new ArrayList<>();
@@ -118,7 +118,7 @@ public class API {
 	/**
 	 * Method to get all Measures to do to prepare a Cocktail
 	 * @param cocktailJson name of the Cocktail
-	 * @return Will return an Arraylist<String> containing all Measures 
+	 * @return Will return an Arraylist of Strings containing all Measures 
 	 */
 	public static ArrayList<String> getCocktailMeasures(JsonObject cocktailJson) {
 		ArrayList<String> measures = new ArrayList<>();
@@ -140,7 +140,7 @@ public class API {
 
 	/**
 	 * Method to get a Cocktail by its category. 
-	 * @return will return an Arraylist<String>
+	 * @return will return an Arraylist of Strings
 	 */
 	public static ArrayList<String> getCocktailCategorys() {
 		ArrayList<String> categorys = new ArrayList<>();
