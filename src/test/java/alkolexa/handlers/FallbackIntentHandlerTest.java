@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.when;
@@ -28,10 +29,10 @@ public class FallbackIntentHandlerTest {
         assertTrue(handler.canHandle(inputMock));
     }
 
-//    @Test
-//    public void handleTest1() {
-//        final Response response = TestUtil.standardTestForHandle(handler);
-//        assertTrue(response.getOutputSpeech().toString().contains(SpeechStrings.getHelp()));
-//    }
+    @Test
+    public void handleTest1() {
+        final Response response = TestUtil.standardTestForHandle(handler);
+        assertNotEquals("Test", response.getOutputSpeech().toString());
+    }
     
 }
