@@ -58,4 +58,4 @@ Umgesetzt in Sprint 3:
 
 ## Dokumentation des Projekts
 
-Link zu den JavaDocs --> [Zur Docu](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/docs/index.html)
+Link zu den JavaDocs --> [Klick mich!](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/docs/index.html)
