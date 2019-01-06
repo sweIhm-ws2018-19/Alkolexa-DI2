@@ -56,4 +56,6 @@ Umgesetzt in Sprint 3:
 
 💬 "suche mir einen 'Shot' " ➡️ Um sich von Alkolexa einen zufälligen Cocktail der Kategorie "Shot" ausgeben zulassen
 
+## Dokumentation des Projekts
 
+Link zu den JavaDocs --> [Auch zu finden unter * /docs/ *](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/docs/index.html)
