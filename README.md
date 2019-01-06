@@ -1,7 +1,4 @@
-# Alkolexa |  ![](https://travis-ci.org/sweIhm-ws2018-19/Alkolexa-DI2.svg?branch=master) | 
-![](https://sonarcloud.io/api/badges/gatekey=Alkolexa:Alkolexa)
-
-
+# Alkolexa |  ![](https://travis-ci.org/sweIhm-ws2018-19/Alkolexa-DI2.svg?branch=master) | ![](https://sonarcloud.io/api/project_badges/measure?project=Alkolexa:Alkolexa&metric=alert_status) | ![](https://sonarcloud.io/api/project_badges/measure?project=Alkolexa:Alkolexa&metric=coverage)
 ### „Ob ich morgen leben werde, weiß ich freilich nicht aber wenn ich morgen lebe, dass ich morgen trinken werde, weiß ich ganz gewiss!” 🥂
 ~ _Gotthold Ephraim Lessing_
 
