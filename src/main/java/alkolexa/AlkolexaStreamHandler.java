@@ -19,13 +19,11 @@ import com.amazon.ask.Skills;
 
 import alkolexa.handlers.CancelandStopIntentHandler;
 import alkolexa.handlers.FallbackIntentHandler;
-import alkolexa.handlers.GetFavoriteIntentHandler;
 import alkolexa.handlers.HelpIntentHandler;
 import alkolexa.handlers.InstructionsIntentHandler;
 import alkolexa.handlers.LaunchRequestHandler;
 import alkolexa.handlers.RandomCocktailIntentHandler;
 import alkolexa.handlers.SessionEndedRequestHandler;
-import alkolexa.handlers.SetFavoriteIntentHandler;
 import alkolexa.handlers.SearchCocktailIntentHandler;
 import alkolexa.handlers.SearchCocktailCategoryIntentHandler;;
 
@@ -43,9 +41,7 @@ public class AlkolexaStreamHandler extends SkillStreamHandler {
                         new RandomCocktailIntentHandler(),
                         new SearchCocktailCategoryIntentHandler(),
                         new InstructionsIntentHandler(),
-                        new SearchCocktailIntentHandler(),
-                        new SetFavoriteIntentHandler(),
-                        new GetFavoriteIntentHandler()
+                        new SearchCocktailIntentHandler()
                         )
                 .withSkillId("amzn1.ask.skill.65f49a2f-9e3f-47a7-84c2-228f138002be")
                 .build();
