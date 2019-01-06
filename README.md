@@ -67,4 +67,4 @@ Link zur API --> [Klick mich!](https://sweihm-ws2018-19.github.io/Alkolexa-DI2/d
 ## Diagramme
 
 ### Anwendungsfall Diagramm: 
-![Finales Anwendungsfalldiagramm](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/FinishedUML/Anwendungsfalldiagram.png)
+Link zur API --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/FinishedUML/Anwendungsfalldiagram.png)
