@@ -3,7 +3,7 @@ package alkolexa.handlers;
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.model.Response;
 
-import alkolexa.SpeechStrings;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -12,13 +12,13 @@ import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.when;
 
-public class FallbackIntentHandlerTest {
+public class RandomCocktailIntentHandlerTest {
 
-    private FallbackIntentHandler handler;
+    private RandomCocktailIntentHandler handler;
 
     @Before
     public void setup() {
-        handler = new FallbackIntentHandler();
+        handler = new RandomCocktailIntentHandler();
     }
 
     @Test
@@ -27,11 +27,11 @@ public class FallbackIntentHandlerTest {
         when(inputMock.matches(any())).thenReturn(true);
         assertTrue(handler.canHandle(inputMock));
     }
-
-//    @Test
-//    public void handleTest1() {
-//        final Response response = TestUtil.standardTestForHandle(handler);
-//        assertTrue(response.getOutputSpeech().toString().contains(SpeechStrings.getHelp()));
-//    }
     
+    @Test
+    public void handleTest1() {
+        final Response response = TestUtil.standardTestForHandle(handler);
+        assertTrue(response.getOutputSpeech().toString().contains("Ich habe "));
+    }
+
 }

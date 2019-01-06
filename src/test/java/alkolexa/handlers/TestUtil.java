@@ -29,6 +29,10 @@ class TestUtil {
                                         .withName("cocktail")
                                         .withValue(cocktail)
                                         .build())
+                                .putSlotsItem("category", Slot.builder()
+                                        .withName("category")
+                                        .withValue("shot")
+                                        .build())
                                 .build())
                         .build())
                 .build();
@@ -52,6 +56,7 @@ class TestUtil {
 
         final Map<String, Object> sessionAttributes = new HashMap<>();
         sessionAttributes.put("LIST_OF_Cocktail", "radler");
+        sessionAttributes.put("LIST_OF_Categroy", "shot");
         final HandlerInput inputMock = TestUtil.mockHandlerInput(cocktail);
         final Optional<Response> res = handler.handle(inputMock);
 
