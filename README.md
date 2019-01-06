@@ -58,4 +58,13 @@ Umgesetzt in Sprint 3:
 
 ## Dokumentation des Projekts
 
-Link zu den JavaDocs --> [Klick mich!](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/docs/index.html)
+Link zu den JavaDocs --> [Klick mich!](https://sweihm-ws2018-19.github.io/Alkolexa-DI2/docs/)
+
+## Unsere API für noch mehr Alkolexa 
+
+Link zur API --> [Klick mich!](https://sweihm-ws2018-19.github.io/Alkolexa-DI2/docs/alkolexa/model/API.html)
+
+## Diagramme
+
+### Anwendungsfall Diagramm: 
+![Finales Anwendungsfalldiagramm](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/FinishedUML/Anwendungsfalldiagram.png)
