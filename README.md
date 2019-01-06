@@ -1,5 +1,7 @@
-# Alkolexa | ![](https://travis-ci.org/sweIhm-ws2018-19/Alkolexa-DI2.svg?branch=master) | 
-
+# Alkolexa 
+<hr>
+![](https://travis-ci.org/sweIhm-ws2018-19/Alkolexa-DI2.svg?branch=master) | 
+<hr>
 ### „Ob ich morgen leben werde, weiß ich freilich nicht aber wenn ich morgen lebe, dass ich morgen trinken werde, weiß ich ganz gewiss!” 🥂
 ~ _Gotthold Ephraim Lessing_
 
@@ -73,4 +75,4 @@ Link zur API --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19
 
 <hr>
 
-## Vielen dank das du bei uns vorbei geschaut hast! Wir hoffen alle das dir unser Projekt gefallen hat | Alkolexa-Team (2018-2019)
+#### Vielen dank das du bei uns vorbei geschaut hast! Wir hoffen alle das dir unser Projekt gefallen hat | Alkolexa-Team (2018-2019)
