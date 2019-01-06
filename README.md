@@ -1,4 +1,4 @@
-# Alkolexa 
+# Alkolexa | ![](https://travis-ci.org/sweIhm-ws2018-19/Alkolexa-DI2.svg?branch=master) | 
 
 ### „Ob ich morgen leben werde, weiß ich freilich nicht aber wenn ich morgen lebe, dass ich morgen trinken werde, weiß ich ganz gewiss!” 🥂
 ~ _Gotthold Ephraim Lessing_
@@ -7,15 +7,11 @@
 
 ## Was ist Alkolexa?
 
-Alkolexa ist ein Amazon Alexa Skill mit dessen Hilfe der Nutzer sich Cocktailrezepte und Weinempfehlungen geben lassen kann sowie Notfallanrufe tätigen kann. Vielen Menschen ist häufig nicht klar wie sie bekannte Cocktails aus Filmen mischen oder woraus ein "Sex on the Beach" besteht ( 🍹 ). Ebenso fällt es vielen Menschen schwere sich für den perfekten Wein zu entscheiden, zum Beispiel als Geschenk für den Vorgesetzten oder wenn Freunde zu Besuch kommen ( 🍷 ). Unsere Vision ist es genau hierbei Nutzer der Alexa-Devices mit unserem Skill zu unterstützen! 
-
-## Wie kann ich Alkolexa bedienen?
-
-
+Alkolexa ist ein Amazon Alexa Skill mit dessen Hilfe Nutzer sich Cocktailrezepte geben lassen kann. Vielen Menschen ist häufig nicht klar wie sie bekannte Cocktails aus Filmen mischen oder woraus ein "Sex on the Beach" besteht ( 🍹 ). Unsere Vision ist es genau hierbei Nutzer der Alexa-Devices mit unserem Skill zu unterstützen! 
 
 ## Wie bekomme ich Alkolexa?
 
-Alkolexa wird ab dem **8. Januar. 2019** auf GitHub verfügbar sein!
+Alkolexa wird ab dem **8. Januar. 2019** auf GitHub im ersten Stable Release verfügbar sein!
 
 ## Unserer Prototype 
 
@@ -29,7 +25,7 @@ Ziel in Sprint 1 ist es den Alexa Skill Buildfähig machen. Ebenso unsere Tools 
 
 ## Sprint 2
 
-Ziel in Sprint 2 ist es Alkolexa mehr und mehr Fähigkeitenm zu geben. Hierzu soll der Zweig für die Auswahl von Cocktails ausgearbeitet werden. Zum Ende von Sprint 2 sind funktionen wie RandomCocktailauswahl implementiert und getestet.
+Ziel in Sprint 2 ist es Alkolexa mehr und mehr Fähigkeiten zu geben. Hierzu soll der Zweig für die Auswahl von Cocktails ausgearbeitet werden. Zum Ende von Sprint 2 sind funktionen wie RandomCocktailauswahl implementiert und getestet.
 
 Implemetierte Funktionen: 
 
@@ -68,3 +64,13 @@ Link zur API --> [Klick mich!](https://sweihm-ws2018-19.github.io/Alkolexa-DI2/d
 
 ### Anwendungsfall Diagramm: 
 Link zur API --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/FinishedUML/Anwendungsfalldiagram.png)
+
+### SearchForCocktail Diagramm: 
+Link zur API --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/SearchForCocktail.png)
+
+### RandomCocktail Diagramm: 
+Link zur API --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/Randomcocktail.png)
+
+<hr>
+
+## Vielen dank das du bei uns vorbei geschaut hast! Wir hoffen alle das dir unser Projekt gefallen hat | Alkolexa-Team (2018-2019)
