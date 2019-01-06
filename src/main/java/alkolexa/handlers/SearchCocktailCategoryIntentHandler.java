@@ -66,21 +66,5 @@ public class SearchCocktailCategoryIntentHandler implements RequestHandler {
 
 	}
 
-	/**
-	 * Getter for the Intent
-	 * 
-	 * @return will return the intent
-	 */
-	public Intent getIntent() {
-		return intent;
-	}
 
-	/**
-	 * Setter for the Intent
-	 * 
-	 * @param intent as parameter
-	 */
-	public void setIntent(Intent intent) {
-		this.intent = intent;
-	}
 }

@@ -71,11 +71,5 @@ public class InstructionsIntentHandler  implements RequestHandler {
 		return slots.get("cocktail").getValue() == null;
 	}
 
-	public Intent getIntent() {
-		return intent;
-	}
 
-	public void setIntent(Intent intent) {
-		this.intent = intent;
-	}
 }
