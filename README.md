@@ -1,7 +1,7 @@
-# Alkolexa 
-<hr>
-![](https://travis-ci.org/sweIhm-ws2018-19/Alkolexa-DI2.svg?branch=master) | 
-<hr>
+# Alkolexa |  ![](https://travis-ci.org/sweIhm-ws2018-19/Alkolexa-DI2.svg?branch=master) | 
+![](https://sonarcloud.io/api/badges/gatekey=Alkolexa:Alkolexa)
+
+
 ### „Ob ich morgen leben werde, weiß ich freilich nicht aber wenn ich morgen lebe, dass ich morgen trinken werde, weiß ich ganz gewiss!” 🥂
 ~ _Gotthold Ephraim Lessing_
 
@@ -65,14 +65,14 @@ Link zur API --> [Klick mich!](https://sweihm-ws2018-19.github.io/Alkolexa-DI2/d
 ## Diagramme
 
 ### Anwendungsfall Diagramm: 
-Link zur API --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/FinishedUML/Anwendungsfalldiagram.png)
+Link zum Dia. --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/FinishedUML/Anwendungsfalldiagram.png)
 
 ### SearchForCocktail Diagramm: 
-Link zur API --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/SearchForCocktail.png)
+Link zum Dia. --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/SearchForCocktail.png)
 
 ### RandomCocktail Diagramm: 
-Link zur API --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/Randomcocktail.png)
+Link zum Dia. --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/Randomcocktail.png)
 
 <hr>
 
-#### Vielen dank das du bei uns vorbei geschaut hast! Wir hoffen alle das dir unser Projekt gefallen hat | Alkolexa-Team (2018-2019)
+##### Vielen dank das du bei uns vorbei geschaut hast! Wir hoffen alle das dir unser Projekt gefallen hat | Alkolexa-Team (2018-2019)
