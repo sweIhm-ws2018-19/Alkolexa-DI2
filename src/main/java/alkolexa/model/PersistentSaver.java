@@ -18,12 +18,17 @@ import javax.json.JsonObject;
 public class PersistentSaver {
 	private static final String URL = "http://alkolexa.awsh-dev.de/";
 	private static final Logger logger = Logger.getLogger(API.class.getName());
+	
+	// Constructor
 	private PersistentSaver() {
 
 	}
 
+	/**
+	 * Method to Set a Fav. Cocktail.
+	 * @param favName name of the Cocktail.
+	 */
 	public static void setFavorite(String favName) {
-
 		try {
 			favName = URLEncoder.encode(favName, "UTF-8");
 		} catch (UnsupportedEncodingException e) {
@@ -33,11 +38,15 @@ public class PersistentSaver {
 		JsonObject jsonObj = JsonObjectFromUrl.getJsonObjectFromUrl(URL + "?name=" + favName);
 		String status = jsonObj.get("status").toString().replace("\"", "");
 		if (!status.equals("success")) {
-			System.out.println("coudnt store favourite");
+			System.out.println("coudn't store favourite");
 		}
 
 	}
 
+	/**
+	 * Method to get a Fav. cocktail
+	 * @return will return a String
+	 */
 	public static String getFavorite() {
 		JsonObject jsonObj = JsonObjectFromUrl.getJsonObjectFromUrl(URL);
 

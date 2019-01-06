@@ -21,10 +21,13 @@ import javax.json.JsonObject;
 public class API {
 
 	private static JsonObject aktuellerCocktail = null;
-
 	private static final Logger logger = Logger.getLogger(API.class.getName());
-	// Returns the First found Cocktail
 
+	/**
+	 * Method to Search for a Cocktail
+	 * @param searchCocktail name of the Cocktail
+	 * @return will return a JsonObject containing all Information on the Searchresult
+	 */
 	public static JsonObject searchForCocktail(String searchCocktail) {
 		String url = "";
 		if (searchCocktail.length() == 0) {
@@ -44,6 +47,11 @@ public class API {
 		return firstFoundCocktail;
 	}
 
+	
+	/**
+	 * Method to get a random Cocktail from the API.
+	 * @return will return a JSON-Object
+	 */
 	public static JsonObject randomCocktail() {
 		String url = "";
 		url = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
@@ -55,6 +63,11 @@ public class API {
 		return firstFoundCocktail;
 	}
 
+	/**
+	 * Method to get the Cocktailname
+	 * @param cocktailJson Cocktail by JSON-OBJ
+	 * @return will return the Name as a String
+	 */
 	public static String getCocktailName(JsonObject cocktailJson) {
 		if(cocktailJson == null) {
 			return null;
@@ -64,12 +77,20 @@ public class API {
 		return name;
 	}
 
-	// Returns the Instructions of a given Cocktail
+	/**
+	 * All instruction to that it takes to make a Cocktail
+	 * @param cocktailJson Json-Obj of the Cocktail
+	 * @return will return a String
+	 */
 	public static String getCocktailInstructions(JsonObject cocktailJson) {
 		String instructions = cocktailJson.getString("strInstructions");
 		return instructions;
 	}
 
+	/**
+	 * Method to get random instruction
+	 * @return return a String with this instruction
+	 */
 	public static String getRandomCocktailInstructions() {
 		if (aktuellerCocktail != null) {
 			String instructions = aktuellerCocktail.getString("strInstructions");
@@ -79,6 +100,11 @@ public class API {
 		return null;
 	}
 
+	/**
+	 * All Ingredients of a Cocktail from the API
+	 * @param cocktailJson name of the Cocktail
+	 * @return will return an Arraylist<String> containing all Ing. of the Cocktail
+	 */
 	public static ArrayList<String> getCocktailIngredients(JsonObject cocktailJson) {
 		ArrayList<String> ingredients = new ArrayList<>();
 		int currentIngredientCount = 1;
@@ -89,6 +115,11 @@ public class API {
 		return ingredients;
 	}
 
+	/**
+	 * Method to get all Measures to do to prepare a Cocktail
+	 * @param cocktailJson name of the Cocktail
+	 * @return Will return an Arraylist<String> containing all Measures 
+	 */
 	public static ArrayList<String> getCocktailMeasures(JsonObject cocktailJson) {
 		ArrayList<String> measures = new ArrayList<>();
 		int currentMeasuresCount = 1;
@@ -101,13 +132,16 @@ public class API {
 		return measures;
 	}
 
-	// for test purpose
 
 	public static void main(String[] args) {
 		getCocktailCategorys();
 		System.out.println(getCocktailName(getRandomCocktailFromCategory("Cocktail")));
 	}
 
+	/**
+	 * Method to get a Cocktail by its category. 
+	 * @return will return an Arraylist<String>
+	 */
 	public static ArrayList<String> getCocktailCategorys() {
 		ArrayList<String> categorys = new ArrayList<>();
 		JsonObject jsonObject = JsonObjectFromUrl
@@ -122,6 +156,11 @@ public class API {
 		return categorys;
 	}
 
+	/**
+	 * Method to get a Random Cocktail from its category.
+	 * @param categoryName name of the category 
+	 * @return will return a Json-Obj
+	 */
 	public static JsonObject getRandomCocktailFromCategory(String categoryName) {
 		// @TODO Implement properly
 	

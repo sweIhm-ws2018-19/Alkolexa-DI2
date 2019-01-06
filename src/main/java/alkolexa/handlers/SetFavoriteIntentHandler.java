@@ -1,70 +1,72 @@
 package alkolexa.handlers;
 
 import static com.amazon.ask.request.Predicates.intentName;
+import java.util.Map;
 import java.util.Optional;
+import javax.json.JsonObject;
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
-import com.amazon.ask.model.Response;
 import com.amazon.ask.model.Intent;
 import com.amazon.ask.model.IntentRequest;
-import com.amazon.ask.model.Request;
-
+import com.amazon.ask.model.Response;
 import com.amazon.ask.model.Slot;
-import com.amazon.ask.response.ResponseBuilder;
-
-import alkolexa.SpeechStrings;
+import alkolexa.model.API;
 import alkolexa.model.PersistentSaver;
 
-//import java.util.Collections;
-import java.util.Map;
-
-//import static alkolexa.handlers.GetFavoriteIntentHandler.FAVORITE_KEY;
-import static alkolexa.handlers.GetFavoriteIntentHandler.FAVORITE_SLOT;
 
 public class SetFavoriteIntentHandler implements RequestHandler {
+	private Map<String, Slot> slots = null;
+	private IntentRequest intentRequest = null;
+	private com.amazon.ask.model.Request request = null;
+	private Intent intent = null;
+
+	/**
+	 * canHandle is a method to match the Speechpattern with the input of the user.
+	 */
 	@Override
 	public boolean canHandle(HandlerInput input) {
-		return input.matches(intentName("SetFavorite"));
+		return input.matches(intentName("SearchCocktailIntent"));
 	}
 
+	/**
+	 * Handle Method to Handle a Set Favorite Cocktail
+	 * @param input will be the spoken text from the user
+	 */
 	@Override
 	public Optional<Response> handle(HandlerInput input) {
-		Request request = input.getRequestEnvelope().getRequest();
-		IntentRequest intentRequest = (IntentRequest) request;
-		Intent intent = intentRequest.getIntent();
-		Map<String, Slot> slots = intent.getSlots();
-
-		Slot favoriteCocktailSlot = slots.get(FAVORITE_SLOT);
-
-		String speechText, repromptText;
-		boolean isAskResponse = false;
-
-		if (favoriteCocktailSlot != null) {
-			String favoriteCocktail = favoriteCocktailSlot.getValue();
-			// input.getAttributesManager().setSessionAttributes(Collections.singletonMap(FAVORITE_KEY,
-			// favoriteCocktail));
-			PersistentSaver.setFavorite(favoriteCocktail);
-
-			speechText = SpeechStrings.getSetfavoritePositive0() + favoriteCocktail
-					+ SpeechStrings.getSetfavoritePositive0();
-			repromptText = SpeechStrings.getSetfavoritePositiveRepromt();
-
+		request = input.getRequestEnvelope().getRequest();
+		intentRequest = (IntentRequest) request;
+		intent = intentRequest.getIntent();
+		slots = intent.getSlots();
+		if (emptyRequest()) {
+			return input.getResponseBuilder()
+					.withSimpleCard("", "") // Some error Messages are missing
+					.withSpeech("") // Some error Messages are missing
+					.withShouldEndSession(false)
+					.build();
 		} else {
-			speechText = SpeechStrings.getSetfavoriteNegative();
-			repromptText = SpeechStrings.getSetfavoriteNegativeRepromt();
-			isAskResponse = true;
+			JsonObject response =  API.searchForCocktail(slots.get("cocktail").getValue());
+			try {
+				PersistentSaver.setFavorite(API.getCocktailName(response));
+				return input.getResponseBuilder()
+						.withSpeech("Ich habe deinen Cocktail " + API.getCocktailName(response) +  " als Favoriten gespeichert.")
+						.withShouldEndSession(false)
+						.build();
+			} catch(Exception e) {
+				System.out.println("Cannot set this Cocktail to FAV.Cock");
+			}
+			return input.getResponseBuilder()
+					.withSpeech("Ich konnte leider kein Favoriten speichern")
+					.withShouldEndSession(false)
+					.build();
 		}
-
-		ResponseBuilder responseBuilder = input.getResponseBuilder();
-
-		responseBuilder.withSimpleCard("", speechText)//
-				.withSpeech(speechText) //
-				.withShouldEndSession(false); // Some error Messages are missing
-
-		if (isAskResponse) {
-			responseBuilder.withShouldEndSession(false).withReprompt(repromptText);
-		}
-
-		return responseBuilder.build();
+	}
+	
+	/**
+	 * Method to check whether a Request is Empty or not.
+	 * @return Will return true in case the request is empty. Empty is considered as null.
+	 */
+	public boolean emptyRequest() {
+		return slots.get("cocktail").getValue() == null;
 	}
 }

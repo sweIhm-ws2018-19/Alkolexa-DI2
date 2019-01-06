@@ -7,31 +7,37 @@ import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
 
 import alkolexa.SpeechStrings;
+import alkolexa.model.API;
 import alkolexa.model.PersistentSaver;
 
 public class GetFavoriteIntentHandler implements RequestHandler {
 	public static final String FAVORITE_KEY = "FAVORITE";
 	public static final String FAVORITE_SLOT = "Favorite";
 
+	/**
+	 * Method to Handle a Input.
+	 */
 	@Override
 	public boolean canHandle(HandlerInput input) {
 		return input.matches(intentName("GetFavorite"));
 	}
 
+	/**
+	 * Method to get your Favorite Cocktail.
+	 */
 	@Override
 	public Optional<Response> handle(HandlerInput input) {
-		String speechText;
-		// String favorite = (String)
-		// input.getAttributesManager().getSessionAttributes().get(FAVORITE_KEY);
 		String favorite = PersistentSaver.getFavorite();
-
-		if (favorite != null && !favorite.isEmpty())
-			speechText = SpeechStrings.getGetfavoritePositive() + favorite + ".";
-		else
-			speechText = SpeechStrings.getGetfavoriteNegative();
-		return input.getResponseBuilder() //
-				.withSpeech(speechText) //
-				.withReprompt("") //
-				.build();
+		if(favorite == null || favorite.equals("") || favorite.length() < 2) {
+			return input.getResponseBuilder()
+					.withSpeech("Du hast noch kein Favorite Cocktail hinzugefügt")
+					.withShouldEndSession(false)
+					.build();
+		} else {
+			return input.getResponseBuilder()
+					.withSpeech("Ich habe deinen Cocktail " + favorite +  " als Favoriten gespeichert.")
+					.withShouldEndSession(false)
+					.build();
+		}
 	}
 }
