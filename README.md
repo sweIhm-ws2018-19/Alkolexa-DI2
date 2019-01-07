@@ -62,19 +62,19 @@ Link zur API --> [Klick mich!](https://sweihm-ws2018-19.github.io/Alkolexa-DI2/d
 ## Diagramme
 
 ### Anwendungsfall Diagramm: 
-Link zum Dia. --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/FinishedUML/Anwendungsfalldiagram.png)
+Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/FinishedUML/Anwendungsfalldiagram.png)
 
 ### SearchForCocktail Diagramm: 
-Link zum Dia. --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/SearchForCocktail.png)
+Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/SearchForCocktail.png)
 
 ### RandomCocktail Diagramm: 
-Link zum Dia. --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/Randomcocktail.png)
+Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/Randomcocktail.png)
  
 ## Recap des Projekts
 
-Negatives : https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/wiki/Negative-Aspekte-des-Projektes 
+Negatives : [Klick mich!](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/wiki/Negative-Aspekte-des-Projektes) 
 
-Positives : https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/wiki/Positive-Aspekte-des-Projektes
+Positives : [Klick mich!](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/wiki/Positive-Aspekte-des-Projektes)
  
 <hr>
 
