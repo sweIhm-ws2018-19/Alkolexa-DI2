@@ -69,7 +69,12 @@ Link zum Dia. --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-1
 
 ### RandomCocktail Diagramm: 
 Link zum Dia. --> [Zum Anwendungsfalldiagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/Randomcocktail.png)
+ 
+### Recap des Projekts
 
+Negatives : https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/wiki/Negative-Aspekte-des-Projektes
+Positives : https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/wiki/Positive-Aspekte-des-Projektes
+ 
 <hr>
 
 ##### Vielen dank das du bei uns vorbei geschaut hast! Wir hoffen alle das dir unser Projekt gefallen hat | Alkolexa-Team (2018-2019)
