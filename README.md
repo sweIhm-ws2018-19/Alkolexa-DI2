@@ -73,6 +73,11 @@ Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2
 ### Fachklassendiagram:
 Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%200%20UML/Fachklassenmodell20190107.png)
 
+### API UMl
+
+Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%201%20UML/Cocktail%20API%20connection.png)
+
+
 ## Recap des Projekts
 
 Negatives : [Klick mich!](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/wiki/Negative-Aspekte-des-Projektes) 
