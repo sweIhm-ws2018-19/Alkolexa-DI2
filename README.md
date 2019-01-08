@@ -61,16 +61,16 @@ Link zur API --> [Klick mich!](https://sweihm-ws2018-19.github.io/Alkolexa-DI2/d
 
 ## Diagramme
 
-### Anwendungsfalldiagramm: 
+### Anwendungsfalldiagram: 
 Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/FinishedUML/Anwendungsfalldiagram.png)
 
-### SearchForCocktail Diagramm: 
+### SearchForCocktail Diagram: 
 Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/SearchForCocktail.png)
 
-### RandomCocktail Diagramm: 
+### RandomCocktail Diagram: 
 Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/Randomcocktail.png)
 
-### Fachklassendiagramm:
+### Fachklassendiagram:
 Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%200%20UML/Fachklassenmodell20190107.png)
 
 ## Recap des Projekts
