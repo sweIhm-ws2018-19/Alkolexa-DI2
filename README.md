@@ -62,7 +62,7 @@ Link zur API --> [Klick mich!](https://sweihm-ws2018-19.github.io/Alkolexa-DI2/d
 ## Diagramme
 
 ### Anwendungsfalldiagram: 
-Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/FinishedUML/Anwendungsfalldiagram.png)
+Link zum Dia. --> ![Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/FinishedUML/Anwendungsfalldiagram.png)
 
 ### SearchForCocktail Diagram: 
 Link zum Dia. --> [Zum Diagram](https://github.com/sweIhm-ws2018-19/Alkolexa-DI2/blob/master/UML/Sprint%202%20UML/SearchForCocktail.png)
